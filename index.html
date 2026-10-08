@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>365 CareNav</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=15">
+</head>
+<body>
+  <div class="stage">
+    <div class="phone">
+      <header class="top">
+        <button class="icon-btn" id="back" hidden aria-label="Back">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M15 5 L8 12 L15 19" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <img class="logo" src="images/365-black.svg" alt="365 Cancer Prevention Society">
+        <div class="top-copy">
+          <h1 id="title">365 CareNav</h1>
+          <p id="subtitle">Community companion</p>
+        </div>
+        <div class="spacer"></div>
+        <div class="langs" id="langs" role="group" aria-label="Language">
+          <button type="button" data-lang="en">EN</button>
+          <button type="button" data-lang="zh">中文</button>
+          <button type="button" data-lang="ms">MS</button>
+          <button type="button" data-lang="ta">தமிழ்</button>
+        </div>
+      </header>
+      <main id="main">
+        <section class="screen on" id="screen-welcome"></section>
+        <section class="screen" id="screen-story"></section>
+        <section class="screen" id="screen-share"></section>
+        <section class="screen" id="screen-people"></section>
+        <section class="screen" id="screen-publish"></section>
+        <section class="screen" id="screen-b-home"></section>
+        <section class="screen" id="screen-assess"></section>
+        <section class="screen" id="screen-voucher"></section>
+        <section class="screen" id="screen-clinics"></section>
+        <section class="screen" id="screen-booked"></section>
+        <section class="screen" id="screen-learn"></section>
+        <section class="screen" id="screen-checkin"></section>
+        <section class="screen" id="screen-care"></section>
+        <section class="screen" id="screen-d-home"></section>
+        <section class="screen" id="screen-give"></section>
+        <section class="screen" id="screen-receipt"></section>
+        <section class="screen" id="screen-impact"></section>
+        <section class="screen" id="screen-campaign"></section>
+        <section class="screen" id="screen-staff"></section>
+        <section class="screen" id="screen-refer"></section>
+        <section class="screen" id="screen-auth"></section>
+        <section class="screen" id="screen-clientreg"></section>
+        <section class="screen" id="screen-screenreg"></section>
+        <section class="screen" id="screen-notify"></section>
+        <section class="screen" id="screen-certificate"></section>
+        <section class="screen" id="screen-badges"></section>
+      </main>
+      <nav class="tabbar" id="tabs"></nav>
+      <button type="button" id="chat-toggle" class="chat-toggle" aria-label="Ask"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 2.2l1.15 5.9L19 9.3l-5.85 1.2L12 16.4l-1.15-5.9L5 9.3l5.85-1.2L12 2.2z"/><path fill="currentColor" d="M18.2 13.2l.55 2.3 2.25.55-2.25.55-.55 2.3-.55-2.3-2.25-.55 2.25-.55.55-2.3z"/></svg><span>Ask</span></button>
+      <section id="chat-panel" class="chat-panel" hidden></section>
+    </div>
+  </div>
+  <script src="journey.js?v=15"></script>
+  <script src="app.js?v=15"></script>
+</body>
+</html>
