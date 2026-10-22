@@ -1,6 +1,26 @@
 {
   "events": [
     {
+      "id": 6638,
+      "kind": "event",
+      "title": "Love Lunch – Outsmarting Colorectal Cancer: Myths, Screening and Modern Solution",
+      "excerpt": "Understanding Colorectal Cancer Fear of the unknown can sometimes delay important health checks. However, learning more about colorectal cancer can help you make informed decisions about your health. Join us for an informative sharing session with Dr Ng Jing Yu. He will explain w",
+      "date": "2026-10-22",
+      "venue": "",
+      "link": "https://www.365cps.org.sg/events/love-lunch-colorectal-cancer-2/",
+      "image": "images/feed/event-6638.png"
+    },
+    {
+      "id": 6635,
+      "kind": "event",
+      "title": "365Live: Living Well With Cancer – Palliative Care For Cancer Patients",
+      "excerpt": "Understanding Palliative Care What Does It Really Mean? Palliative care is often associated with the final stages of life. However, it can offer much more than end-of-life support. This form of care focuses on helping people living with serious illnesses manage symptoms and maint",
+      "date": "2026-10-22",
+      "venue": "",
+      "link": "https://www.365cps.org.sg/events/love-lunch-colorectal-cancer/",
+      "image": "images/feed/event-6635.jpg"
+    },
+    {
       "id": 6260,
       "kind": "event",
       "title": "Love Lunch – Live More, Stress Less",
@@ -8,7 +28,7 @@
       "date": "2026-10-06",
       "venue": "",
       "link": "https://www.365cps.org.sg/events/love-lunch-live-more-stress-less/",
-      "image": "https://www.365cps.org.sg/wp-content/uploads/2026/10/2.png"
+      "image": "images/feed/event-6260.png"
     },
     {
       "id": 6256,
@@ -18,7 +38,7 @@
       "date": "2026-10-06",
       "venue": "",
       "link": "https://www.365cps.org.sg/events/healthy-eating-for-cancer-prevention-2/",
-      "image": "https://www.365cps.org.sg/wp-content/uploads/2026/10/3.png"
+      "image": "images/feed/event-6256.png"
     },
     {
       "id": 6247,
@@ -28,7 +48,7 @@
       "date": "2026-10-05",
       "venue": "",
       "link": "https://www.365cps.org.sg/events/emotional-support-for-cancer/",
-      "image": "https://www.365cps.org.sg/wp-content/uploads/2026/10/365Live-10-October-.png"
+      "image": "images/feed/event-6247.png"
     },
     {
       "id": 5929,
@@ -38,17 +58,17 @@
       "date": "2026-09-25",
       "venue": "",
       "link": "https://www.365cps.org.sg/events/tcm-wellness/",
-      "image": "https://www.365cps.org.sg/wp-content/uploads/2026/09/169-Love-Lunch-New-Template.jpg"
+      "image": "images/feed/event-5929.jpg"
     },
     {
       "id": 5925,
       "kind": "event",
-      "title": "365Live: Is That Normal? Let’s Talk Breast Health",
+      "title": "365Live: Is That Normal? Let's Talk Breast Health",
       "excerpt": "How Well Do You Really Know Your Breasts? Understanding Breast Health and Breast Cancer How well do you really know your breasts? Understanding breast health and breast cancer can help you become more aware of what is normal for you and recognise changes that may need medical att",
       "date": "2026-09-25",
       "venue": "",
       "link": "https://www.365cps.org.sg/events/breast-health-and-breast-cancer/",
-      "image": "https://www.365cps.org.sg/wp-content/uploads/2026/09/365Live-3-October-.png"
+      "image": "images/feed/event-5925.png"
     },
     {
       "id": 5707,
@@ -58,7 +78,7 @@
       "date": "2026-09-18",
       "venue": "",
       "link": "https://www.365cps.org.sg/events/breast-cancer-awareness-month/",
-      "image": "https://www.365cps.org.sg/wp-content/uploads/2026/09/well-women-programme-mammography-screening-24-1.png"
+      "image": "images/feed/event-5707.png"
     }
   ],
   "articles": [
@@ -70,7 +90,7 @@
       "date": "2025-12-15",
       "venue": "",
       "link": "https://www.365cps.org.sg/food-myths-and-cancer/",
-      "image": "https://www.365cps.org.sg/wp-content/uploads/2026/05/Website-Article-Images-scaled-e1706246207253-300x200-1.jpg"
+      "image": "images/feed/article-3338.jpg"
     },
     {
       "id": 3310,
@@ -80,7 +100,7 @@
       "date": "2025-10-01",
       "venue": "",
       "link": "https://www.365cps.org.sg/when-food-doesnt-taste-the-same/",
-      "image": "https://www.365cps.org.sg/wp-content/uploads/2026/05/Palatability-scaled-1.webp"
+      "image": "images/feed/article-3310.webp"
     },
     {
       "id": 3341,
@@ -90,7 +110,7 @@
       "date": "2025-09-30",
       "venue": "",
       "link": "https://www.365cps.org.sg/dlbcl-diagnosis-first-line-treatment-in-singapore/",
-      "image": "https://www.365cps.org.sg/wp-content/uploads/2026/05/shutterstock_710862322_Art-1-1.jpg"
+      "image": "images/feed/article-3341.jpg"
     },
     {
       "id": 3308,
@@ -100,7 +120,27 @@
       "date": "2025-09-18",
       "venue": "",
       "link": "https://www.365cps.org.sg/are-supplements-necessary-to-lower-your-cancer-risk/",
-      "image": "https://www.365cps.org.sg/wp-content/uploads/2026/05/Supplements-scaled-1.webp"
+      "image": "images/feed/article-3308.webp"
+    },
+    {
+      "id": 3335,
+      "kind": "article",
+      "title": "Understanding Lung Cancer: Early Signs, Risks & Screening",
+      "excerpt": "Early detection and advances in treatment are giving patients a better chance than ever – but awareness of risks and symptoms remains crucial. We answer your questions on symptoms, screening and risk factors related to lung cancer. What are the early symptoms of lung cancer? Can ",
+      "date": "2025-09-16",
+      "venue": "",
+      "link": "https://www.365cps.org.sg/lung-cancer-screening-symptoms/",
+      "image": "images/feed/article-3335.jpg"
+    },
+    {
+      "id": 3332,
+      "kind": "article",
+      "title": "The Enduring Role of Radiotherapy in Lymphoma",
+      "excerpt": "Lymphomas are a type of cancer that starts in the lymphatic system, which is part of the body’s immune defense. The lymphatic system includes lymph nodes (small glands), the spleen, bone marrow, and other tissues that help fight infection and get rid of waste. In lymphoma, certai",
+      "date": "2025-09-04",
+      "venue": "",
+      "link": "https://www.365cps.org.sg/the-enduring-role-of-radiotherapy-in-lymphoma/",
+      "image": "images/feed/article-3332.jpg"
     }
   ]
 }

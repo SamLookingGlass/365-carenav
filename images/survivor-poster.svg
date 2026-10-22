@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 168" role="img" aria-label="Survivor thank-you">
+  <rect width="390" height="168" fill="#b20411"/>
+  <rect x="18" y="18" width="354" height="132" rx="16" fill="#8e0310"/>
+  <circle cx="195" cy="78" r="28" fill="#fff6ee"/>
+  <path d="M189 66v24l20-12z" fill="#b20411"/>
+  <text x="195" y="132" text-anchor="middle" fill="#fff6ee" font-family="Urbanist, system-ui, sans-serif" font-size="16" font-weight="700">A thank-you from someone you helped</text>
+</svg>

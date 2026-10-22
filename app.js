@@ -3,6 +3,7 @@ const CLINICS = [
   ["Bukit Panjang Social Service Centre", "Bukit Panjang"],
   ["Clementi Social Service Centre", "Clementi"],
   ["Tampines Social Service Centre", "Tampines"],
+  ["Mammobus", "Mobile breast-screening stop"],
   ["Ang Mo Kio Polyclinic", "Ang Mo Kio"],
   ["Kallang Polyclinic", "Kallang"],
   ["Sembawang Polyclinic", "Sembawang"],
@@ -33,7 +34,7 @@ const I18N = {
     roleCare: "I need screening or care",
     roleCareSub: "Check eligibility, book a clinic, join an exercise session.",
     roleGive: "I want to give or volunteer",
-    roleGiveSub: "Monthly gift, impact tracker, or a personal campaign.",
+    roleGiveSub: "Monthly gift, impact tracker, or volunteer desk.",
     roleStaff: "Clinic or staff demo",
     roleStaffSub: "Referral inbox for 365CPS.",
     homeCare: "Prevention and care",
@@ -75,8 +76,8 @@ const I18N = {
     confirmGift: "Confirm monthly gift",
     receiptTitle: "Tax receipt",
     receiptBody: "An IPC gift qualifies for a 250% tax deduction.",
-    impactTitle: "Adopt-a-Screening",
-    impactLead: "See a named use of a gift, not a general admin pool.",
+    impactTitle: "Your impact",
+    impactLead: "See how your gift funds screenings and classes.",
     campTitle: "Champion campaign",
     campLead: "Raise for 365CPS without a commercial canvasser fee.",
     startCamp: "Publish campaign",
@@ -151,7 +152,79 @@ const I18N = {
     bookTalkWhen: "Sat 24 Oct · 10:00",
     bookTalkWhere: "Clementi Social Service Centre",
     stretchSites: "Stretching sites",
-    serviceCentres: "Service centres"
+    serviceCentres: "Service centres",
+    navVolunteer: "Volunteer",
+    volunteerHome: "Volunteer desk",
+    volunteerLead: "Get field guidance, clock a service hour, and collect your medals.",
+    volunteerAsk: "Field guide",
+    volunteerAskLead: "Ask about walking someone in, RSE, handover, services, or subsidies. This is not medical advice.",
+    volunteerCheck: "Clock a service hour",
+    volunteerCheckLead: "Scan the QR at a stretching site or a service centre. One check-in is one hour.",
+    volunteerHours: "Hours this month",
+    volunteerBoard: "Hours this month",
+    volunteerBoardLead: "Display names only. No NRIC, phone, or email.",
+    volunteerBadges: "Volunteer medals",
+    ambassador: "Bronze Care Ambassador",
+    ambassadorDetail: "Clock 3 service hours. The centre then hands you an enamel pin.",
+    fighter: "Gold Cancer Fighter",
+    fighterDetail: "Clock 10 service hours. The centre then hands you a dri-fit tee.",
+    tokenPin: "Physical token: enamel pin, collected at the centre.",
+    tokenTee: "Physical token: dri-fit tee, collected at the centre.",
+    hourLogged: "One service hour logged.",
+    hourNeedsSign: "Sign in so this hour is stored on your display name.",
+    giveDirect: "A PayNow or card gift stays with 365CPS. There is no third-party cut on this channel.",
+    giveAlongside: "Birthday and event campaigns can sit beside agency fundraising. Direct gifts do not replace those partnerships.",
+    mammobus: "Mammobus",
+    mammobusNote: "Mobile breast-screening stop. Not a social service centre.",
+    rseSchedule: "365 RSE schedule",
+    rseScheduleBody: "Weekday mornings · 7:50am at four NHG polyclinics: Ang Mo Kio Level 1 Community Plaza, Serangoon Level 1 Health Studio, Kallang Level 2 Health Studio, Khatib Health Studio.",
+    healthyGuide: "Healthy living, one plate at a time",
+    healthyGuideBody: "A short guide on meals that support screening and recovery. This is not medical advice. A dietitian at a 365CPS centre can sit with you.",
+    survivorTitle: "A thank-you from someone you helped",
+    survivorBody: "A survivor thanks the volunteer who walked her in, and the donor who funded the place. Play the note, then share it.",
+    playSurvivor: "Play thank-you",
+    playingSurvivor: "Playing the survivor's thank-you.",
+    topContributors: "Top contributors this month",
+    shareTikTok: "Share on TikTok",
+    fatigueNotes: "Volunteer debrief notes",
+    fatigueFlag: "Fatigue words noted",
+    fatigueOk: "No fatigue words noted",
+    skillWalk: "Walking companion",
+    skillRse: "RSE marshal",
+    skillTalk: "Health-talk helper",
+    skillGreeter: "Centre greeter",
+    skillMammobus: "Mammobus greeter",
+    langSkillEn: "English",
+    langSkillZh: "中文",
+    langSkillMs: "Bahasa Melayu",
+    langSkillTa: "தமிழ்",
+    yourSkills: "Your skills",
+    yourSkillsLead: "Pick what you can do. Display name only. No NRIC, phone, or email.",
+    preferredCentre: "Preferred centre",
+    saveSkills: "Save skills",
+    skillsSaved: "Skills saved on this phone.",
+    fitsYou: "Fits you",
+    fitsYouLead: "Open shifts scored by skill, language, and centre.",
+    matchWeak: "Partial fit",
+    acceptShift: "Accept",
+    shiftAccepted: "Shift accepted. Ask for this shift is ready.",
+    askThisShift: "Ask for this shift",
+    noFitShifts: "No open shifts match your skills yet. Update your skills, or check back later.",
+    yourShift: "Your accepted shift",
+    shiftWalk: "Walk someone in · Tampines",
+    shiftRse: "RSE marshal · Ang Mo Kio",
+    shiftTalk: "Health-talk helper · Clementi",
+    shiftMammobus: "Mammobus greeter",
+    volunteerRoster: "Volunteer roster",
+    openShifts: "Open shifts",
+    suggested: "Suggested",
+    assignShift: "Assign",
+    shiftAssigned: "Assigned on this phone.",
+    filledShifts: "Shifts filled",
+    openShiftCount: "Open shifts",
+    skillCol: "Skills",
+    langCol: "Languages",
+    hoursCol: "Hours"
   },
   zh: {
     brand: "365 关怀导航",
@@ -203,8 +276,8 @@ const I18N = {
     confirmGift: "确认示例捐赠",
     receiptTitle: "示例税务收据",
     receiptBody: "IPC 捐赠可享有 250% 税务扣除。",
-    impactTitle: "认领一次筛查",
-    impactLead: "看到捐赠的具体用途，而不是笼统行政经费。",
+    impactTitle: "你的成效",
+    impactLead: "查看捐赠如何资助筛查与课程。",
     campTitle: "冠军筹款",
     campLead: "为 365CPS 筹款，无需商业劝捐佣金。",
     startCamp: "发布筹款",
@@ -279,7 +352,79 @@ const I18N = {
     bookTalkWhen: "10月24日周六 · 10:00",
     bookTalkWhere: "金文泰社会服务中心",
     stretchSites: "伸展地点",
-    serviceCentres: "服务中心"
+    serviceCentres: "服务中心",
+    navVolunteer: "义工",
+    volunteerHome: "义工台",
+    volunteerLead: "获取现场指引、记录服务时数、领取奖章。",
+    volunteerAsk: "现场指引",
+    volunteerAskLead: "询问陪同入内、韵律伸展、何时交接、服务或补贴。这不是医疗建议。",
+    volunteerCheck: "记录一小时服务",
+    volunteerCheckLead: "在伸展点或服务中心扫码。一次签到为一小时。",
+    volunteerHours: "本月时数",
+    volunteerBoard: "本月时数",
+    volunteerBoardLead: "只显示账户显示名。不含身份证、电话或电邮。",
+    volunteerBadges: "义工奖章",
+    ambassador: "铜质关怀大使",
+    ambassadorDetail: "累计 3 小时后，中心发给珐琅徽章。",
+    fighter: "金质抗癌战士",
+    fighterDetail: "累计 10 小时后，中心发给速干上衣。",
+    hourNeedsSign: "登录后，这小时会记在你的显示名称下。",
+    tokenPin: "实物：珐琅徽章，到中心领取。",
+    tokenTee: "实物：速干上衣，到中心领取。",
+    hourLogged: "已记录一小时服务。",
+    giveDirect: "PayNow 或信用卡捐赠留给 365CPS。此渠道没有第三方抽成。",
+    giveAlongside: "生日和活动筹款可以与机构筹款并存。直接捐赠并不取代那些合作。",
+    mammobus: "乳房筛查巴士",
+    mammobusNote: "流动乳房筛查站点。不是社会服务中心。",
+    rseSchedule: "365 韵律伸展时间表",
+    rseScheduleBody: "平日上午 7:50，四家国民健保综合诊疗所：宏茂桥一楼社区广场、实龙岗一楼健康工作室、加冷二楼健康工作室、卡迪健康工作室。",
+    healthyGuide: "健康生活，从一餐开始",
+    healthyGuideBody: "一份支持筛查与康复的短指南。这不是医疗建议。365CPS 中心的营养师可以陪你。",
+    survivorTitle: "一位受助者的感谢",
+    survivorBody: "一位康复者感谢陪她走进诊所的义工，以及资助名额的捐赠者。播放这段话，然后分享。",
+    playSurvivor: "播放感谢",
+    playingSurvivor: "正在播放康复者的感谢。",
+    topContributors: "本月主要贡献者",
+    shareTikTok: "分享到 TikTok",
+    fatigueNotes: "义工事后记录",
+    fatigueFlag: "出现疲惫用词",
+    fatigueOk: "未出现疲惫用词",
+    skillWalk: "陪同步行",
+    skillRse: "韵律伸展带队",
+    skillTalk: "健康讲座助手",
+    skillGreeter: "中心迎宾",
+    skillMammobus: "乳房筛查巴士迎宾",
+    langSkillEn: "English",
+    langSkillZh: "中文",
+    langSkillMs: "Bahasa Melayu",
+    langSkillTa: "தமிழ்",
+    yourSkills: "你的技能",
+    yourSkillsLead: "选择你会做的事。只显示账户显示名。不含身份证、电话或电邮。",
+    preferredCentre: "偏好中心",
+    saveSkills: "保存技能",
+    skillsSaved: "技能已保存在此手机。",
+    fitsYou: "适合你",
+    fitsYouLead: "按技能、语言和中心为开放班次打分。",
+    matchWeak: "部分匹配",
+    acceptShift: "接受",
+    shiftAccepted: "已接受班次。可按此班次询问。",
+    askThisShift: "按此班次询问",
+    noFitShifts: "暂无匹配你技能的开放班次。请更新技能，或稍后再看。",
+    yourShift: "你已接受的班次",
+    shiftWalk: "陪同步行 · 淡滨尼",
+    shiftRse: "韵律伸展带队 · 宏茂桥",
+    shiftTalk: "健康讲座助手 · 金文泰",
+    shiftMammobus: "乳房筛查巴士迎宾",
+    volunteerRoster: "义工名册",
+    openShifts: "开放班次",
+    suggested: "建议",
+    assignShift: "指派",
+    shiftAssigned: "已在此手机指派。",
+    filledShifts: "已填班次",
+    openShiftCount: "开放班次",
+    skillCol: "技能",
+    langCol: "语言",
+    hoursCol: "时数"
   },
   ms: {
     brand: "365 CareNav",
@@ -331,8 +476,8 @@ const I18N = {
     confirmGift: "Sahkan derma bulanan",
     receiptTitle: "Resit cukai",
     receiptBody: "Hadiah IPC layak untuk potongan cukai 250%.",
-    impactTitle: "Angkat satu saringan",
-    impactLead: "Lihat kegunaan bernama, bukan kumpulan pentadbiran am.",
+    impactTitle: "Impak anda",
+    impactLead: "Lihat bagaimana derma anda membiayai saringan dan kelas.",
     campTitle: "Kempen juara",
     campLead: "Kumpul dana untuk 365CPS tanpa komisen penjalan komersial.",
     startCamp: "Terbitkan kempen",
@@ -407,7 +552,79 @@ const I18N = {
     bookTalkWhen: "Sab 24 Okt · 10:00",
     bookTalkWhere: "Pusat Perkhidmatan Sosial Clementi",
     stretchSites: "Tapak regangan",
-    serviceCentres: "Pusat perkhidmatan"
+    serviceCentres: "Pusat perkhidmatan",
+    navVolunteer: "Sukarelawan",
+    volunteerHome: "Meja sukarelawan",
+    volunteerLead: "Dapatkan panduan lapangan, catat jam perkhidmatan, dan kumpul pingat.",
+    volunteerAsk: "Panduan lapangan",
+    volunteerAskLead: "Tanya tentang teman masuk, RSE, serahan, perkhidmatan, atau subsidi. Ini bukan nasihat perubatan.",
+    volunteerCheck: "Catat satu jam perkhidmatan",
+    volunteerCheckLead: "Imbas QR di tapak regangan atau pusat perkhidmatan. Satu daftar masuk ialah satu jam.",
+    volunteerHours: "Jam bulan ini",
+    volunteerBoard: "Jam bulan ini",
+    volunteerBoardLead: "Nama paparan akaun sahaja. Tiada NRIC, telefon, atau e-mel.",
+    volunteerBadges: "Pingat sukarelawan",
+    ambassador: "Duta Jagaan Gangsa",
+    ambassadorDetail: "Catat 3 jam. Pusat kemudian menyerahkan pin enamel.",
+    fighter: "Pejuang Kanser Emas",
+    fighterDetail: "Catat 10 jam. Pusat kemudian menyerahkan baju dri-fit.",
+    tokenPin: "Token fizikal: pin enamel, diambil di pusat.",
+    tokenTee: "Token fizikal: baju dri-fit, diambil di pusat.",
+    hourLogged: "Satu jam perkhidmatan dicatat.",
+    hourNeedsSign: "Log masuk supaya jam ini disimpan pada nama paparan anda.",
+    giveDirect: "Derma PayNow atau kad kekal dengan 365CPS. Tiada potongan pihak ketiga pada saluran ini.",
+    giveAlongside: "Kempen hari jadi dan acara boleh duduk bersama pengumpulan dana agensi. Derma langsung tidak menggantikan kerjasama itu.",
+    mammobus: "Mammobus",
+    mammobusNote: "Hentian saringan payudara bergerak. Bukan pusat perkhidmatan sosial.",
+    rseSchedule: "Jadual 365 RSE",
+    rseScheduleBody: "Pagi hari bekerja · 7:50 di empat poliklinik NHG: Ang Mo Kio Plaza Komuniti Aras 1, Serangoon Studio Kesihatan Aras 1, Kallang Studio Kesihatan Aras 2, Khatib Studio Kesihatan.",
+    healthyGuide: "Hidup sihat, satu pinggan pada satu masa",
+    healthyGuideBody: "Panduan ringkas tentang makanan yang menyokong saringan dan pemulihan. Ini bukan nasihat perubatan. Pakar diet di pusat 365CPS boleh duduk bersama anda.",
+    survivorTitle: "Ucapan terima kasih daripada seseorang yang anda bantu",
+    survivorBody: "Seorang yang pulih berterima kasih kepada sukarelawan yang menemaninya, dan penderma yang membiayai tempat itu. Mainkan nota, kemudian kongsi.",
+    playSurvivor: "Mainkan ucapan terima kasih",
+    playingSurvivor: "Ucapan terima kasih sedang dimainkan.",
+    topContributors: "Penyumbang teratas bulan ini",
+    shareTikTok: "Kongsi di TikTok",
+    fatigueNotes: "Nota debrief sukarelawan",
+    fatigueFlag: "Perkataan letih dicatat",
+    fatigueOk: "Tiada perkataan letih dicatat",
+    skillWalk: "Teman berjalan",
+    skillRse: "Pengawal RSE",
+    skillTalk: "Pembantu bicara kesihatan",
+    skillGreeter: "Penyambut pusat",
+    skillMammobus: "Penyambut Mammobus",
+    langSkillEn: "English",
+    langSkillZh: "中文",
+    langSkillMs: "Bahasa Melayu",
+    langSkillTa: "தமிழ்",
+    yourSkills: "Kemahiran anda",
+    yourSkillsLead: "Pilih apa yang anda boleh buat. Nama paparan sahaja. Tiada NRIC, telefon, atau e-mel.",
+    preferredCentre: "Pusat pilihan",
+    saveSkills: "Simpan kemahiran",
+    skillsSaved: "Kemahiran disimpan pada telefon ini.",
+    fitsYou: "Sesuai untuk anda",
+    fitsYouLead: "Syif terbuka dinilai mengikut kemahiran, bahasa, dan pusat.",
+    matchWeak: "Padanan separa",
+    acceptShift: "Terima",
+    shiftAccepted: "Syif diterima. Tanya untuk syif ini sedia.",
+    askThisShift: "Tanya untuk syif ini",
+    noFitShifts: "Tiada syif terbuka yang sepadan lagi. Kemas kini kemahiran, atau semak semula nanti.",
+    yourShift: "Syif yang anda terima",
+    shiftWalk: "Teman berjalan · Tampines",
+    shiftRse: "Pengawal RSE · Ang Mo Kio",
+    shiftTalk: "Pembantu bicara · Clementi",
+    shiftMammobus: "Penyambut Mammobus",
+    volunteerRoster: "Senarai sukarelawan",
+    openShifts: "Syif terbuka",
+    suggested: "Dicadangkan",
+    assignShift: "Tugaskan",
+    shiftAssigned: "Ditugaskan pada telefon ini.",
+    filledShifts: "Syif diisi",
+    openShiftCount: "Syif terbuka",
+    skillCol: "Kemahiran",
+    langCol: "Bahasa",
+    hoursCol: "Jam"
   },
   ta: {
     brand: "365 CareNav",
@@ -459,8 +676,8 @@ const I18N = {
     confirmGift: "மாத நன்கொடையை உறுதிசெய்",
     receiptTitle: "வரி ரசீது",
     receiptBody: "IPC நன்கொடை 250% வரி விலக்குக்கு தகுதி.",
-    impactTitle: "ஒரு சோதனையை தத்தெடு",
-    impactLead: "பொதுவான நிர்வாகக் குளம் அல்ல, பெயரிடப்பட்ட பயன்பாடு.",
+    impactTitle: "உங்கள் தாக்கம்",
+    impactLead: "உங்கள் கொடை பரிசோதனைகளுக்கும் வகுப்புகளுக்கும் எப்படி உதவுகிறது என்பதைப் பாருங்கள்.",
     campTitle: "சாம்பியன் பிரச்சாரம்",
     campLead: "வணிக கமிஷன் இல்லாமல் 365CPS-க்கு திரட்டுங்கள்.",
     startCamp: "பிரச்சாரத்தை வெளியிடு",
@@ -535,7 +752,79 @@ const I18N = {
     bookTalkWhen: "சனி 24 அக் · 10:00",
     bookTalkWhere: "கிளெமென்டி சமூக சேவை மையம்",
     stretchSites: "நீட்சி இடங்கள்",
-    serviceCentres: "சேவை மையங்கள்"
+    serviceCentres: "சேவை மையங்கள்",
+    navVolunteer: "தொண்டர்",
+    volunteerHome: "தொண்டர் மேசை",
+    volunteerLead: "கள வழிகாட்டலைப் பெறுங்கள், சேவை மணிநேரத்தைப் பதிவு செய்யுங்கள், பதக்கங்களைப் பெறுங்கள்.",
+    volunteerAsk: "கள வழிகாட்டி",
+    volunteerAskLead: "நடை துணை, RSE, ஒப்படைப்பு, சேவை அல்லது மானியம் பற்றிக் கேளுங்கள். இது மருத்துவ ஆலோசனை அல்ல.",
+    volunteerCheck: "ஒரு சேவை மணிநேரத்தைப் பதிவு செய்",
+    volunteerCheckLead: "நீட்சி இடம் அல்லது சேவை மையத்தில் QR ஐ ஸ்கேன் செய்யுங்கள். ஒரு வருகை ஒரு மணிநேரம்.",
+    volunteerHours: "இந்த மாத மணிநேரம்",
+    volunteerBoard: "இந்த மாத மணிநேரம்",
+    volunteerBoardLead: "கணக்கு காட்சிப் பெயர் மட்டும். NRIC, தொலைபேசி, மின்னஞ்சல் இல்லை.",
+    volunteerBadges: "தொண்டர் பதக்கங்கள்",
+    ambassador: "வெண்கல பராமரிப்பு தூதர்",
+    ambassadorDetail: "3 மணிநேரம் பதிவு செய்த பிறகு மையம் பற்சிப்பி முள் தரும்.",
+    fighter: "தங்க புற்றுநோய் போராளி",
+    fighterDetail: "10 மணிநேரம் பதிவு செய்த பிறகு மையம் ட்ரை-பிட் சட்டை தரும்.",
+    tokenPin: "உடல் பரிசு: பற்சிப்பி முள், மையத்தில் பெறுங்கள்.",
+    tokenTee: "உடல் பரிசு: ட்ரை-பிட் சட்டை, மையத்தில் பெறுங்கள்.",
+    hourLogged: "ஒரு சேவை மணிநேரம் பதிவானது.",
+    hourNeedsSign: "உள்நுழையுங்கள்; இந்த மணிநேரம் உங்கள் காட்சிப் பெயரில் பதிவாகும்.",
+    giveDirect: "PayNow அல்லது அட்டை கொடை 365CPS-இடமே இருக்கும். இந்த வழியில் மூன்றாம் தரப்பு கழிவு இல்லை.",
+    giveAlongside: "பிறந்தநாள் மற்றும் நிகழ்வு பிரச்சாரங்கள் நிறுவன நிதி திரட்டலுடன் இருக்கலாம். நேரடி கொடை அந்த கூட்டாண்மைகளை மாற்றாது.",
+    mammobus: "மேமோபஸ்",
+    mammobusNote: "நகரும் மார்பக பரிசோதனை நிறுத்தம். சமூக சேவை மையம் அல்ல.",
+    rseSchedule: "365 RSE அட்டவணை",
+    rseScheduleBody: "வார நாள் காலை · 7:50, நான்கு NHG பாலிகிளினிக்குகள்: ஆங் மோ கியோ தரை 1 சமூக சதுக்கம், செராங்கூன் தரை 1 உடல்நல ஸ்டுடியோ, கல்லாங் தரை 2 உடல்நல ஸ்டுடியோ, காதிப் உடல்நல ஸ்டுடியோ.",
+    healthyGuide: "ஆரோக்கியமான வாழ்க்கை, ஒரு தட்டு ஒரு நேரம்",
+    healthyGuideBody: "பரிசோதனைக்கும் மீட்சிக்கும் உதவும் உணவு குறித்த குறுகிய வழிகாட்டி. இது மருத்துவ ஆலோசனை அல்ல. 365CPS மையத்தின் உணவியலாளர் உங்களுடன் அமரலாம்.",
+    survivorTitle: "நீங்கள் உதவிய ஒருவரின் நன்றி",
+    survivorBody: "ஒரு மீட்டவர், உள்ளே அழைத்துச் சென்ற தொண்டருக்கும் இடத்தை நிதியளித்த நன்கொடையாளருக்கும் நன்றி சொல்கிறார். நன்றியை இயக்கி பகிருங்கள்.",
+    playSurvivor: "நன்றியை இயக்கு",
+    playingSurvivor: "மீட்டவரின் நன்றி இயங்குகிறது.",
+    topContributors: "இந்த மாத முதன்மை பங்களிப்பாளர்கள்",
+    shareTikTok: "TikTok-இல் பகிர்",
+    fatigueNotes: "தொண்டர் பிந்தைய குறிப்புகள்",
+    fatigueFlag: "சோர்வு சொற்கள் குறிக்கப்பட்டன",
+    fatigueOk: "சோர்வு சொற்கள் இல்லை",
+    skillWalk: "நடை துணை",
+    skillRse: "RSE மேற்பார்வையாளர்",
+    skillTalk: "உடல்நல உரை உதவியாளர்",
+    skillGreeter: "மைய வரவேற்பாளர்",
+    skillMammobus: "மேமோபஸ் வரவேற்பாளர்",
+    langSkillEn: "English",
+    langSkillZh: "中文",
+    langSkillMs: "Bahasa Melayu",
+    langSkillTa: "தமிழ்",
+    yourSkills: "உங்கள் திறன்கள்",
+    yourSkillsLead: "நீங்கள் செய்யக்கூடியதைத் தேர்ந்தெடுங்கள். காட்சிப் பெயர் மட்டும். NRIC, தொலைபேசி, மின்னஞ்சல் இல்லை.",
+    preferredCentre: "விருப்ப மையம்",
+    saveSkills: "திறன்களைச் சேமி",
+    skillsSaved: "திறன்கள் இந்த தொலைபேசியில் சேமிக்கப்பட்டன.",
+    fitsYou: "உங்களுக்குப் பொருந்தும்",
+    fitsYouLead: "திறன், மொழி, மையம் அடிப்படையில் திறந்த பணிகளுக்கு மதிப்பெண்.",
+    matchWeak: "பகுதி பொருத்தம்",
+    acceptShift: "ஏற்றுக்கொள்",
+    shiftAccepted: "பணி ஏற்கப்பட்டது. இந்தப் பணிக்குக் கேட்க தயார்.",
+    askThisShift: "இந்தப் பணிக்குக் கேள்",
+    noFitShifts: "உங்கள் திறன்களுக்குப் பொருந்தும் பணி இல்லை. திறன்களைப் புதுப்பிக்கவும், அல்லது பின்னர் பார்க்கவும்.",
+    yourShift: "நீங்கள் ஏற்ற பணி",
+    shiftWalk: "நடை துணை · தெம்பினீஸ்",
+    shiftRse: "RSE மேற்பார்வை · ஆங் மோ கியோ",
+    shiftTalk: "உரை உதவி · கிளெமென்டி",
+    shiftMammobus: "மேமோபஸ் வரவேற்பு",
+    volunteerRoster: "தொண்டர் பட்டியல்",
+    openShifts: "திறந்த பணிகள்",
+    suggested: "பரிந்துரை",
+    assignShift: "ஒதுக்கு",
+    shiftAssigned: "இந்த தொலைபேசியில் ஒதுக்கப்பட்டது.",
+    filledShifts: "நிரப்பப்பட்ட பணிகள்",
+    openShiftCount: "திறந்த பணிகள்",
+    skillCol: "திறன்கள்",
+    langCol: "மொழிகள்",
+    hoursCol: "மணிநேரம்"
   }
 };
 
@@ -566,8 +855,12 @@ const state = {
   feedView: "events",
   webStory: null,
   playing: false,
+  survivorPlay: false,
   editing: "",
   timeNote: "",
+  skillDraft: null,
+  skillNote: "",
+  assignNote: "",
   chatOpen: false,
   chatTopic: "",
   chatStep: 0,
@@ -587,7 +880,8 @@ const CHANNELS = [
   ["app", "App newsfeed", "Already on the first page of this phone."],
   ["whatsapp", "WhatsApp family chat", "Share with the family chat."],
   ["notice", "Centre noticeboard", "A card for the five centres."],
-  ["sms", "Talk reminder list", "Add the talk to the reminder list."]
+  ["sms", "Talk reminder list", "Add the talk to the reminder list."],
+  ["tiktok", "TikTok", "Label a co-distribution as TikTok. It does not post for you."]
 ];
 
 const TAG_LABEL = {
@@ -598,10 +892,10 @@ const TAG_LABEL = {
 };
 
 const FEED_UI = {
-  en: { week: "This week near you", all: "All", cancer: "Cancer", promo: "Promotions", talk: "Health talks", senior: "For seniors", interested: "I'm interested", saved: "Interested", share: "Share", send: "Send it out", n: "interested", ask: "Ask", askHint: "A worry, or a screening question", chatSend: "Send", greet: "Hello. I am not a clinician, and this is not medical advice. Tell me what is on your mind. We can look at a screening question or a worry, and I can help you book a counselling or screening session.", onlyTwo: "I hear you. I can help with a screening question, or with something that has been weighing on you. Choose one, and I will help you book a counselling or screening session when you are ready." },
-  zh: { week: "您附近的这一周", all: "全部", cancer: "癌症", promo: "优惠", talk: "健康讲座", senior: "乐龄", interested: "我想参加", saved: "已感兴趣", share: "分享", send: "发送出去", n: "人感兴趣", ask: "问问", askHint: "一句担心，或一个筛查问题", chatSend: "发送", greet: "你好。我不是医生，这些也不是医疗建议。可以说说你在意的事。我们可以一起看筛查或你的担心，然后我帮你预约辅导或筛查。", onlyTwo: "我听见了。我能帮两件事：筛查问题，或一件压在心上的事。选一项，准备好时我帮你预约辅导或筛查。" },
-  ms: { week: "Minggu ini dekat anda", all: "Semua", cancer: "Kanser", promo: "Promosi", talk: "Bicara kesihatan", senior: "Warga emas", interested: "Saya berminat", saved: "Berminat", share: "Kongsi", send: "Hantar", n: "berminat", ask: "Tanya", askHint: "Kebimbangan, atau soalan saringan", chatSend: "Hantar", greet: "Hai. Saya bukan doktor, dan ini bukan nasihat perubatan. Ceritakan apa yang ada di hati. Kita boleh lihat soalan saringan atau kebimbangan anda, kemudian saya bantu tempah sesi kaunseling atau saringan.", onlyTwo: "Saya dengar. Saya boleh bantu dengan soalan saringan, atau sesuatu yang membebankan. Pilih satu. Apabila anda bersedia, saya bantu tempah kaunseling atau saringan." },
-  ta: { week: "இந்த வாரம் உங்களுக்கு அருகில்", all: "அனைத்தும்", cancer: "புற்றுநோய்", promo: "சலுகை", talk: "உடல்நல உரை", senior: "மூத்தோர்", interested: "எனக்கு ஆர்வம்", saved: "ஆர்வம்", share: "பகிர்", send: "அனுப்பு", n: "பேர் ஆர்வம்", ask: "கேளுங்கள்", askHint: "ஒரு கவலை, அல்லது பரிசோதனை கேள்வி", chatSend: "அனுப்பு", greet: "வணக்கம். நான் மருத்துவர் அல்ல, இது மருத்துவ ஆலோசனை அல்ல. மனதில் இருப்பதைச் சொல்லுங்கள். பரிசோதனை கேள்வியையோ கவலையையோ பார்க்கலாம், பிறகு ஆலோசனை அல்லது பரிசோதனை அமர்வைப் பதிவு செய்ய உதவுவேன்.", onlyTwo: "கேட்டேன். பரிசோதனை கேள்விக்கோ, மனதை அழுத்தும் ஒன்றுக்கோ உதவ முடியும். ஒன்றைத் தேர்ந்தெடுங்கள். தயாரானதும் ஆலோசனை அல்லது பரிசோதனை பதிவுக்கு உதவுவேன்." }
+  en: { week: "This week near you", all: "All", cancer: "Cancer", promo: "Promotions", talk: "Health talks", senior: "For seniors", interested: "I'm interested", saved: "Interested", share: "Share", send: "Send it out", n: "interested", ask: "Ask", askHint: "A worry, a screening, a service, or a subsidy", chatSend: "Send", greet: "Hello. I am not a clinician, and this is not medical advice. We can look at a screening question, a worry, a 365CPS service, or a subsidy, and I can help you book a counselling or screening session.", onlyTwo: "I hear you. I can help with screening, counselling, 365CPS services, or subsidies. Choose one, and I will help you book a counselling or screening session when you are ready.", askHintVolunteer: "Walk-in, RSE, handover, a service, or a subsidy", greetVolunteer: "Hello. This is a volunteer field guide, not medical advice. We can cover walking someone in, marshalling RSE, when to hand over, 365CPS services, or subsidies. Hand clinical questions to a clinician.", onlyTwoVolunteer: "I hear you. Choose walk-in, RSE marshal, when to hand over, 365CPS services, or subsidies. Hand clinical questions to a clinician." },
+  zh: { week: "您附近的这一周", all: "全部", cancer: "癌症", promo: "优惠", talk: "健康讲座", senior: "乐龄", interested: "我想参加", saved: "已感兴趣", share: "分享", send: "发送出去", n: "人感兴趣", ask: "问问", askHint: "担心、筛查、服务或补贴", chatSend: "发送", greet: "你好。我不是医生，这些也不是医疗建议。我们可以一起看筛查、你的担心、365CPS 服务或补贴，然后我帮你预约辅导或筛查。", onlyTwo: "我听见了。我能帮筛查、辅导、365CPS 服务或补贴。选一项，准备好时我帮你预约辅导或筛查。", askHintVolunteer: "陪同、伸展带队、何时交接、服务或补贴", greetVolunteer: "你好。这是义工现场指南，不是医疗建议。我们可以讲陪同入内、韵律伸展带队、何时交接、365CPS 服务或补贴。临床问题请交给医生。", onlyTwoVolunteer: "我听见了。请选陪同、伸展带队、何时交接、365CPS 服务或补贴。临床问题请交给医生。" },
+  ms: { week: "Minggu ini dekat anda", all: "Semua", cancer: "Kanser", promo: "Promosi", talk: "Bicara kesihatan", senior: "Warga emas", interested: "Saya berminat", saved: "Berminat", share: "Kongsi", send: "Hantar", n: "berminat", ask: "Tanya", askHint: "Kebimbangan, saringan, perkhidmatan, atau subsidi", chatSend: "Hantar", greet: "Hai. Saya bukan doktor, dan ini bukan nasihat perubatan. Kita boleh lihat soalan saringan, kebimbangan, perkhidmatan 365CPS, atau subsidi, kemudian saya bantu tempah sesi kaunseling atau saringan.", onlyTwo: "Saya dengar. Saya boleh bantu dengan saringan, kaunseling, perkhidmatan 365CPS, atau subsidi. Pilih satu. Apabila anda bersedia, saya bantu tempah kaunseling atau saringan.", askHintVolunteer: "Teman, RSE, serahan, perkhidmatan, atau subsidi", greetVolunteer: "Hai. Ini panduan lapangan sukarelawan, bukan nasihat perubatan. Kita boleh bincang teman masuk, pengawal RSE, bila serah, perkhidmatan 365CPS, atau subsidi. Serahkan soalan klinikal kepada doktor.", onlyTwoVolunteer: "Saya dengar. Pilih teman masuk, pengawal RSE, bila serah, perkhidmatan 365CPS, atau subsidi. Serahkan soalan klinikal kepada doktor." },
+  ta: { week: "இந்த வாரம் உங்களுக்கு அருகில்", all: "அனைத்தும்", cancer: "புற்றுநோய்", promo: "சலுகை", talk: "உடல்நல உரை", senior: "மூத்தோர்", interested: "எனக்கு ஆர்வம்", saved: "ஆர்வம்", share: "பகிர்", send: "அனுப்பு", n: "பேர் ஆர்வம்", ask: "கேளுங்கள்", askHint: "ஒரு கவலை, பரிசோதனை, சேவை அல்லது மானியம்", chatSend: "அனுப்பு", greet: "வணக்கம். நான் மருத்துவர் அல்ல, இது மருத்துவ ஆலோசனை அல்ல. பரிசோதனை, கவலை, 365CPS சேவை அல்லது மானியத்தைப் பார்க்கலாம், பிறகு ஆலோசனை அல்லது பரிசோதனை அமர்வைப் பதிவு செய்ய உதவுவேன்.", onlyTwo: "கேட்டேன். பரிசோதனை, ஆலோசனை, 365CPS சேவை அல்லது மானியத்துக்கு உதவ முடியும். ஒன்றைத் தேர்ந்தெடுங்கள். தயாரானதும் ஆலோசனை அல்லது பரிசோதனை பதிவுக்கு உதவுவேன்.", askHintVolunteer: "நடை, RSE, ஒப்படைப்பு, சேவை அல்லது மானியம்", greetVolunteer: "வணக்கம். இது தொண்டர் கள வழிகாட்டி, மருத்துவ ஆலோசனை அல்ல. உள்ளே அழைத்துச் செல்வது, RSE மேற்பார்வை, எப்போது ஒப்படைப்பது, 365CPS சேவைகள் அல்லது மானியம் பற்றிப் பேசலாம். மருத்துவ கேள்விகளை மருத்துவரிடம் ஒப்படைங்கள்.", onlyTwoVolunteer: "கேட்டேன். நடை துணை, RSE மேற்பார்வை, ஒப்படைப்பு, 365CPS சேவை அல்லது மானியத்தைத் தேர்ந்தெடுங்கள். மருத்துவ கேள்விகளை மருத்துவரிடம் ஒப்படைங்கள்." }
 };
 
 const COPY = {
@@ -644,6 +938,41 @@ const chatCounselling = {
   zh: { name: "辅导支持", ask: "您希望在哪方面得到支持？", options: [["results", "担心检查结果"], ["family", "家庭压力"], ["mood", "睡眠或情绪低落"]], replyResults: "等结果会很沉，你会担心是很自然的。这不是医疗建议。写下你最想问的一个问题，并告诉一位你信任的人。不必一个人扛着。我可以帮你预约辅导；如果下一步是检查，也可以预约筛查。", replyFamily: "家庭压力是真的，它让你累，这没有关系。这不是医疗建议。今天如果可以，短走一段或安静吃一餐，给自己一点空隙。想找人谈谈的话，我可以帮你预约辅导。如果需要，也可以预约筛查。", replyMood: "睡不好、情绪低落都很难受，你说出来是对的。这不是医疗建议。尽量保留一顿按时的饭，白天见一点光。如果已经持续超过两周，应该告诉医生。我可以帮你预约辅导，让你不必一个人扛；如果心里也有筛查，也可以一起预约。", bookScreen: "预约筛查", bookCare: "预约辅导" },
   ms: { name: "Sokongan kaunseling", ask: "Sokongan apa yang anda perlukan?", options: [["results", "Bimbang tentang keputusan"], ["family", "Tekanan keluarga"], ["mood", "Tidur atau mood rendah"]], replyResults: "Menunggu keputusan memang berat, dan wajar anda bimbang. Ini bukan nasihat perubatan. Tulis satu soalan yang paling anda mahu tanya, dan beritahu seorang yang anda percaya. Anda tidak perlu memikul ini seorang diri. Saya boleh bantu tempah sesi kaunseling, atau sesi saringan jika itu langkah seterusnya.", replyFamily: "Tekanan keluarga itu nyata, dan tidak mengapa jika ia memenatkan anda. Ini bukan nasihat perubatan. Jalan singkat atau satu hidangan yang tenang boleh beri sedikit ruang hari ini. Jika anda mahu bercakap, saya boleh bantu tempah kaunseling. Sesi saringan juga ada jika itu yang anda perlukan.", replyMood: "Tidur yang kurang dan mood yang rendah memang sukar, dan anda betul untuk mengatakannya. Ini bukan nasihat perubatan. Jaga satu waktu makan dan dapatkan sedikit cahaya siang jika boleh. Jika ini sudah lebih dua minggu, beritahu doktor. Saya boleh bantu tempah kaunseling supaya anda tidak memikulnya seorang diri, atau sesi saringan jika itu juga di fikiran.", bookScreen: "Tempah saringan", bookCare: "Tempah kaunseling" },
   ta: { name: "ஆலோசனை ஆதரவு", ask: "எந்த ஆதரவு வேண்டும்?", options: [["results", "முடிவைப் பற்றிய கவலை"], ["family", "குடும்ப அழுத்தம்"], ["mood", "தூக்கம் அல்லது சோர்வு"]], replyResults: "முடிவை எதிர்பார்ப்பது கனமாக இருக்கும், கவலைப்படுவது இயல்பு. இது மருத்துவ ஆலோசனை அல்ல. நீங்கள் கேட்க விரும்பும் ஒரு கேள்வியை எழுதுங்கள், நம்பும் ஒருவரிடம் சொல்லுங்கள். இதைத் தனியாகச் சுமக்க வேண்டாம். ஆலோசனை அமர்வைப் பதிவு செய்ய உதவுவேன். அடுத்த படி பரிசோதனை என்றால் அதையும் பதிவு செய்யலாம்.", replyFamily: "குடும்ப அழுத்தம் உண்மை, அது சோர்வூட்டுவது பரவாயில்லை. இது மருத்துவ ஆலோசனை அல்ல. இன்று முடிந்தால் குறுகிய நடை அல்லது அமைதியான ஒரு உணவு சிறிது இடம் தரும். பேச விரும்பினால் ஆலோசனை அமர்வைப் பதிவு செய்ய உதவுவேன். தேவைப்பட்டால் பரிசோதனை அமர்வும் உண்டு.", replyMood: "தூக்கம் குறைவும் மனச்சோர்வும் கடினம், அதைச் சொன்னது சரி. இது மருத்துவ ஆலோசனை அல்ல. முடிந்தால் ஒரு வேளை உணவையும் பகல் வெளிச்சத்தையும் வையுங்கள். இது இரண்டு வாரத்துக்கு மேல் நீடித்தால் மருத்துவரிடம் சொல்லுங்கள். தனியாகச் சுமக்காமல் ஆலோசனை அமர்வைப் பதிவு செய்ய உதவுவேன். பரிசோதனையும் மனதில் இருந்தால் அதையும் பதிவு செய்யலாம்.", bookScreen: "பரிசோதனையைப் பதிவு செய்", bookCare: "ஆலோசனையைப் பதிவு செய்" }
+};
+
+const chatServices = {
+  en: { name: "365CPS services", ask: "Which 365CPS offering are you presenting?", options: [["screen", "Screening programmes"], ["allied", "Counselling, nutrition, physiotherapy"], ["rse", "Rhythmic stretching"]], replyScreen: "This is not medical advice. 365CPS sponsors seven screening programmes, from lung to multi-cancer. A clinician confirms eligibility. Hand this to a clinician rather than naming a diagnosis.", replyAllied: "This is not medical advice. Counselling, nutrition, and physiotherapy are booked at the four social service centres. They are separate from a screening voucher. Hand this to a clinician if the person needs a medical view.", replyRse: "This is not medical advice. 365 RSE runs on weekday mornings at four NHG polyclinic studios. A volunteer counts people in. Hand clinical questions to a clinician." },
+  zh: { name: "365CPS 服务", ask: "你正在介绍哪一项 365CPS 服务？", options: [["screen", "筛查项目"], ["allied", "辅导、营养、物理治疗"], ["rse", "韵律伸展"]], replyScreen: "这不是医疗建议。365CPS 资助七项筛查，从肺癌到多癌种。医生确认资格。请把这件事交给医生，不要自己下诊断。", replyAllied: "这不是医疗建议。辅导、营养和物理治疗在四家社会服务中心预约，与筛查券分开。如果需要医学判断，请交给医生。", replyRse: "这不是医疗建议。365 韵律伸展在平日上午于四家国民健保综合诊疗所进行。义工带大家签到。临床问题请交给医生。" },
+  ms: { name: "Perkhidmatan 365CPS", ask: "Perkhidmatan 365CPS yang mana anda sedang persembahkan?", options: [["screen", "Program saringan"], ["allied", "Kaunseling, pemakanan, fisioterapi"], ["rse", "Regangan berirama"]], replyScreen: "Ini bukan nasihat perubatan. 365CPS menaja tujuh program saringan, daripada paru-paru kepada pelbagai kanser. Doktor mengesahkan kelayakan. Serahkan ini kepada doktor, jangan buat diagnosis.", replyAllied: "Ini bukan nasihat perubatan. Kaunseling, pemakanan, dan fisioterapi ditempah di empat pusat perkhidmatan sosial. Ia berasingan daripada baucar saringan. Serahkan soalan perubatan kepada doktor.", replyRse: "Ini bukan nasihat perubatan. 365 RSE berjalan pada pagi hari bekerja di empat studio poliklinik NHG. Sukarelawan mengira kehadiran. Serahkan soalan klinikal kepada doktor." },
+  ta: { name: "365CPS சேவைகள்", ask: "எந்த 365CPS சேவையை நீங்கள் விளக்குகிறீர்கள்?", options: [["screen", "பரிசோதனை திட்டங்கள்"], ["allied", "ஆலோசனை, ஊட்டச்சத்து, இயன்முறை மருத்துவம்"], ["rse", "தாள நீட்சி"]], replyScreen: "இது மருத்துவ ஆலோசனை அல்ல. 365CPS ஏழு பரிசோதனை திட்டங்களுக்கு நிதியுதவி செய்கிறது. மருத்துவர் தகுதியை உறுதி செய்கிறார். இதை மருத்துவரிடம் ஒப்படைங்கள், நோயறிதலை நீங்கள் சொல்ல வேண்டாம்.", replyAllied: "இது மருத்துவ ஆலோசனை அல்ல. ஆலோசனை, ஊட்டச்சத்து, இயன்முறை மருத்துவம் நான்கு சமூக சேவை மையங்களில் பதிவாகும். பரிசோதனை சீட்டிலிருந்து தனி. மருத்துவ பார்வை வேண்டும் என்றால் மருத்துவரிடம் ஒப்படைங்கள்.", replyRse: "இது மருத்துவ ஆலோசனை அல்ல. 365 RSE வார நாள் காலையில் நான்கு NHG பாலிகிளினிக் ஸ்டுடியோக்களில் நடக்கிறது. தொண்டர் வருகையை எண்ணுகிறார். மருத்துவ கேள்விகளை மருத்துவரிடம் ஒப்படைங்கள்." }
+};
+
+const chatSubsidy = {
+  en: { name: "Medical subsidies", ask: "Which subsidy are you explaining?", options: [["sfl", "Screen for Life"], ["chas", "CHAS or Public Assistance"], ["ipc", "IPC tax deduction"]], replySfl: "This is not medical advice. Screen for Life is a national subsidy. Age, sex, and last test date matter, and a clinician confirms the slot. Hand this to a clinician rather than naming a diagnosis.", replyChas: "This is not medical advice. Blue or Orange CHAS, or a Public Assistance card, is often needed for a sponsored 365CPS screening. A clinician confirms eligibility. Hand this to a clinician.", replyIpc: "This is not medical advice. A gift to 365CPS as an IPC can qualify for a 250% tax deduction. This is about giving, not a diagnosis. Hand clinical questions to a clinician." },
+  zh: { name: "医疗补贴", ask: "你正在说明哪一项补贴？", options: [["sfl", "Screen for Life"], ["chas", "CHAS 或公共援助"], ["ipc", "IPC 税务扣除"]], replySfl: "这不是医疗建议。Screen for Life 是全国补贴。年龄、性别和上次检查时间都重要，医生确认名额。请交给医生，不要自己下诊断。", replyChas: "这不是医疗建议。蓝卡或橙卡 CHAS，或公共援助卡，常用于 365CPS 资助筛查。医生确认资格。请交给医生。", replyIpc: "这不是医疗建议。向作为 IPC 的 365CPS 捐赠，可享有 250% 税务扣除。这是捐赠说明，不是诊断。临床问题请交给医生。" },
+  ms: { name: "Subsidi perubatan", ask: "Subsidi yang mana anda terangkan?", options: [["sfl", "Screen for Life"], ["chas", "CHAS atau Bantuan Awam"], ["ipc", "Potongan cukai IPC"]], replySfl: "Ini bukan nasihat perubatan. Screen for Life ialah subsidi kebangsaan. Umur, jantina, dan tarikh ujian terakhir penting, dan doktor mengesahkan slot. Serahkan ini kepada doktor.", replyChas: "Ini bukan nasihat perubatan. CHAS Biru atau Oren, atau kad Bantuan Awam, sering diperlukan untuk saringan tajaan 365CPS. Doktor mengesahkan kelayakan. Serahkan ini kepada doktor.", replyIpc: "Ini bukan nasihat perubatan. Derma kepada 365CPS sebagai IPC boleh layak untuk potongan cukai 250%. Ini tentang pemberian, bukan diagnosis. Serahkan soalan klinikal kepada doktor." },
+  ta: { name: "மருத்துவ மானியங்கள்", ask: "எந்த மானியத்தை விளக்குகிறீர்கள்?", options: [["sfl", "Screen for Life"], ["chas", "CHAS அல்லது பொது உதவி"], ["ipc", "IPC வரி விலக்கு"]], replySfl: "இது மருத்துவ ஆலோசனை அல்ல. Screen for Life ஒரு தேசிய மானியம். வயது, பாலினம், கடைசி சோதனை தேதி முக்கியம். மருத்துவர் இடத்தை உறுதி செய்கிறார். இதை மருத்துவரிடம் ஒப்படைங்கள்.", replyChas: "இது மருத்துவ ஆலோசனை அல்ல. நீலம் அல்லது ஆரஞ்சு CHAS, அல்லது பொது உதவி அட்டை, 365CPS நிதியுதவி பரிசோதனைக்கு அடிக்கடி தேவை. மருத்துவர் தகுதியை உறுதி செய்கிறார். இதை மருத்துவரிடம் ஒப்படைங்கள்.", replyIpc: "இது மருத்துவ ஆலோசனை அல்ல. IPC ஆக 365CPS-க்கு கொடை 250% வரி விலக்குக்கு தகுதியாக இருக்கலாம். இது கொடை பற்றியது, நோயறிதல் அல்ல. மருத்துவ கேள்விகளை மருத்துவரிடம் ஒப்படைங்கள்." }
+};
+
+const chatWalk = {
+  en: { name: "Walk someone in", ask: "What do you need for this walk-in?", options: [["say", "What to say"], ["stop", "When to stop"], ["time", "Getting there on time"]], replySay: "This is not medical advice. Greet them by name if you have it, walk at their pace, and say you will get them to the door. You do not explain tests or results. Hand this to a clinician rather than naming a diagnosis.", replyStop: "This is not medical advice. Stop if they have chest pain, severe breathlessness, dizziness, or ask you for a diagnosis. Stay with them, call centre staff or a clinician, and do not leave them alone. Hand this to a clinician.", replyTime: "This is not medical advice. Agree a meeting spot and leave early enough for lifts and slow walking. You get them to the door on time. You do not give medical advice. Hand clinical questions to a clinician." },
+  zh: { name: "陪同入内", ask: "这次陪同你需要哪一项？", options: [["say", "该说什么"], ["stop", "何时停下"], ["time", "准时到达"]], replySay: "这不是医疗建议。如有姓名就称呼对方，跟对方的节奏走，说明你会送到门口。你不解释检查或结果。请交给医生，不要自己下诊断。", replyStop: "这不是医疗建议。若出现胸痛、严重气促、头晕，或对方要你下诊断，立刻停下。留在身边，呼叫中心职员或医生，不要让对方独处。请交给医生。", replyTime: "这不是医疗建议。约定见面点，预留电梯和慢行时间。你负责准时送到门口，不给医疗建议。临床问题请交给医生。" },
+  ms: { name: "Teman masuk", ask: "Apa yang anda perlukan untuk teman ini?", options: [["say", "Apa yang perlu dikatakan"], ["stop", "Bila berhenti"], ["time", "Tiba tepat masa"]], replySay: "Ini bukan nasihat perubatan. Sapa dengan nama jika ada, berjalan mengikut rentak mereka, dan katakan anda akan hantar ke pintu. Anda tidak terangkan ujian atau keputusan. Serahkan ini kepada doktor.", replyStop: "Ini bukan nasihat perubatan. Berhenti jika ada sakit dada, sesak nafas teruk, pening, atau mereka minta diagnosis. Kekal bersama, hubungi kakitangan pusat atau doktor, jangan tinggalkan mereka. Serahkan ini kepada doktor.", replyTime: "Ini bukan nasihat perubatan. Set tempat jumpa dan keluar awal untuk lif dan jalan perlahan. Anda hantar mereka ke pintu tepat masa. Anda tidak beri nasihat perubatan. Serahkan soalan klinikal kepada doktor." },
+  ta: { name: "உள்ளே அழைத்துச் செல்", ask: "இந்த நடைக்கு என்ன வேண்டும்?", options: [["say", "என்ன சொல்வது"], ["stop", "எப்போது நிறுத்துவது"], ["time", "நேரத்துக்குச் செல்வது"]], replySay: "இது மருத்துவ ஆலோசனை அல்ல. பெயர் தெரிந்தால் அழைத்து, அவர்களின் வேகத்தில் நடந்து, வாயில் வரை அழைத்துச் செல்வேன் என்று சொல்லுங்கள். சோதனை அல்லது முடிவை விளக்க வேண்டாம். இதை மருத்துவரிடம் ஒப்படைங்கள்.", replyStop: "இது மருத்துவ ஆலோசனை அல்ல. மார்பு வலி, கடுமையான மூச்சுத்திணறல், தலைச்சுற்றல் அல்லது நோயறிதல் கேட்டால் நிறுத்துங்கள். உடன் இருங்கள், மைய ஊழியர் அல்லது மருத்துவரை அழைங்கள், தனியாக விடாதீர்கள். இதை மருத்துவரிடம் ஒப்படைங்கள்.", replyTime: "இது மருத்துவ ஆலோசனை அல்ல. சந்திக்கும் இடத்தை ஒப்புக்கொண்டு, மின்தூக்கி மற்றும் மெதுவான நடைக்கு முன்கூட்டியே புறப்படுங்கள். நேரத்துக்கு வாயில் வரை அழைத்துச் செல்லுங்கள். மருத்துவ ஆலோசனை சொல்ல வேண்டாம். மருத்துவ கேள்விகளை மருத்துவரிடம் ஒப்படைங்கள்." }
+};
+
+const chatRseGuide = {
+  en: { name: "RSE marshal", ask: "Which RSE point do you need?", options: [["count", "Count people in"], ["pace", "Pace and chairs"], ["time", "Weekday 7:50 sites"]], replyCount: "This is not medical advice. Greet each person, mark attendance, and keep the door clear. You count people in. You do not lead clinical stretches. Hand clinical questions to a clinician.", replyPace: "This is not medical advice. Keep the pace slow. Put chairs out for anyone who needs them. If someone looks unwell, pause and call a clinician or centre staff. Hand this to a clinician.", replyTime: "This is not medical advice. Weekday mornings at 7:50 at four NHG studios: Ang Mo Kio Level 1 Community Plaza, Serangoon Level 1 Health Studio, Kallang Level 2 Health Studio, Khatib Health Studio. Hand clinical questions to a clinician." },
+  zh: { name: "韵律伸展带队", ask: "你需要哪一项伸展要点？", options: [["count", "清点签到"], ["pace", "节奏与座椅"], ["time", "平日 7:50 地点"]], replyCount: "这不是医疗建议。问候每位到场者，记录出席，保持门口畅通。你负责清点，不带领临床伸展。临床问题请交给医生。", replyPace: "这不是医疗建议。保持慢节奏。需要的人准备椅子。若有人不适，暂停并呼叫医生或中心职员。请交给医生。", replyTime: "这不是医疗建议。平日上午 7:50，四家国民健保综合诊疗所：宏茂桥一楼社区广场、实龙岗一楼健康工作室、加冷二楼健康工作室、卡迪健康工作室。临床问题请交给医生。" },
+  ms: { name: "Pengawal RSE", ask: "Perkara RSE yang mana anda perlukan?", options: [["count", "Kira kehadiran"], ["pace", "Rentak dan kerusi"], ["time", "Tapak 7:50 hari bekerja"]], replyCount: "Ini bukan nasihat perubatan. Sapa setiap orang, tandakan kehadiran, dan pastikan pintu jelas. Anda mengira orang. Anda tidak pimpin regangan klinikal. Serahkan soalan klinikal kepada doktor.", replyPace: "Ini bukan nasihat perubatan. Kekalkan rentak perlahan. Sediakan kerusi untuk yang memerlukannya. Jika seseorang nampak tidak sihat, berhenti dan hubungi doktor atau kakitangan pusat. Serahkan ini kepada doktor.", replyTime: "Ini bukan nasihat perubatan. Pagi hari bekerja 7:50 di empat studio NHG: Ang Mo Kio Plaza Komuniti Aras 1, Serangoon Studio Kesihatan Aras 1, Kallang Studio Kesihatan Aras 2, Khatib Studio Kesihatan. Serahkan soalan klinikal kepada doktor." },
+  ta: { name: "RSE மேற்பார்வை", ask: "எந்த RSE குறிப்பு வேண்டும்?", options: [["count", "வருகையை எண்ணு"], ["pace", "வேகம் மற்றும் நாற்காலி"], ["time", "வார நாள் 7:50 இடங்கள்"]], replyCount: "இது மருத்துவ ஆலோசனை அல்ல. ஒவ்வொருவரையும் வரவேற்று வருகையைப் பதிவு செய்து வாயிலைத் தெளிவாக வைத்திருங்கள். நீங்கள் எண்ணுகிறீர்கள். மருத்துவ நீட்சியை வழிநடத்த வேண்டாம். மருத்துவ கேள்விகளை மருத்துவரிடம் ஒப்படைங்கள்.", replyPace: "இது மருத்துவ ஆலோசனை அல்ல. வேகத்தை மெதுவாக வைத்திருங்கள். தேவைப்படுபவர்களுக்கு நாற்காலிகள் வையுங்கள். யாராவது உடல்நிலை சரியில்லாமல் இருந்தால் நிறுத்தி மருத்துவர் அல்லது மைய ஊழியரை அழைங்கள். இதை மருத்துவரிடம் ஒப்படைங்கள்.", replyTime: "இது மருத்துவ ஆலோசனை அல்ல. வார நாள் காலை 7:50, நான்கு NHG ஸ்டுடியோக்கள்: ஆங் மோ கியோ தரை 1 சமூக சதுக்கம், செராங்கூன் தரை 1 உடல்நல ஸ்டுடியோ, கல்லாங் தரை 2 உடல்நல ஸ்டுடியோ, காதிப் உடல்நல ஸ்டுடியோ. மருத்துவ கேள்விகளை மருத்துவரிடம் ஒப்படைங்கள்." }
+};
+
+const chatHandover = {
+  en: { name: "When to hand over", ask: "What are you seeing?", options: [["symptoms", "Symptoms"], ["diagnosis", "They want a diagnosis"], ["distress", "Distress"]], replySymptoms: "This is not medical advice. Chest pain, unexplained bleeding, severe breathlessness, or sudden weakness means stop the volunteer task and call a clinician or centre staff now. Hand this to a clinician rather than naming a diagnosis.", replyDiagnosis: "This is not medical advice. If they ask you to name a disease or read a scan, say you are a volunteer and a clinician must answer. Do not guess. Hand this to a clinician.", replyDistress: "This is not medical advice. If they are in tears, panicked, or say they feel alone or unsafe, stay with them, call centre staff, and offer to book counselling in the app. Hand clinical questions to a clinician." },
+  zh: { name: "何时交接", ask: "你看到什么情况？", options: [["symptoms", "症状"], ["diagnosis", "对方要诊断"], ["distress", "情绪困扰"]], replySymptoms: "这不是医疗建议。胸痛、不明出血、严重气促或突发无力时，停下义工任务，立刻呼叫医生或中心职员。请交给医生，不要自己下诊断。", replyDiagnosis: "这不是医疗建议。若对方要你说出病名或解读影像，说明你是义工，必须由医生回答。不要猜测。请交给医生。", replyDistress: "这不是医疗建议。若对方哭泣、惊慌，或说感到孤单不安全，留在身边，呼叫中心职员，并可用应用预约辅导。临床问题请交给医生。" },
+  ms: { name: "Bila serah", ask: "Apa yang anda lihat?", options: [["symptoms", "Simptom"], ["diagnosis", "Mereka mahu diagnosis"], ["distress", "Tekanan emosi"]], replySymptoms: "Ini bukan nasihat perubatan. Sakit dada, pendarahan tanpa sebab, sesak nafas teruk, atau kelemahan mengejut bermaksud henti tugas sukarelawan dan hubungi doktor atau kakitangan pusat sekarang. Serahkan ini kepada doktor.", replyDiagnosis: "Ini bukan nasihat perubatan. Jika mereka minta anda namakan penyakit atau baca imbasan, katakan anda sukarelawan dan doktor mesti jawab. Jangan teka. Serahkan ini kepada doktor.", replyDistress: "Ini bukan nasihat perubatan. Jika mereka menangis, panik, atau rasa seorang diri atau tidak selamat, kekal bersama, hubungi kakitangan pusat, dan tawar tempah kaunseling dalam apl. Serahkan soalan klinikal kepada doktor." },
+  ta: { name: "எப்போது ஒப்படைப்பது", ask: "என்ன பார்க்கிறீர்கள்?", options: [["symptoms", "அறிகுறிகள்"], ["diagnosis", "நோயறிதல் கேட்கிறார்கள்"], ["distress", "மன உளைச்சல்"]], replySymptoms: "இது மருத்துவ ஆலோசனை அல்ல. மார்பு வலி, விளக்கமில்லாத இரத்தப்போக்கு, கடுமையான மூச்சுத்திணறல் அல்லது திடீர் பலவீனம் இருந்தால் தொண்டர் பணியை நிறுத்தி இப்போதே மருத்துவர் அல்லது மைய ஊழியரை அழைங்கள். நோயறிதலை நீங்கள் சொல்லாதீர்கள். இதை மருத்துவரிடம் ஒப்படைங்கள்.", replyDiagnosis: "இது மருத்துவ ஆலோசனை அல்ல. நோய் பெயர் சொல்ல அல்லது ஸ்கேன் படிக்கச் சொன்னால், நீங்கள் தொண்டர் என்றும் மருத்துவரே பதில் சொல்ல வேண்டும் என்றும் சொல்லுங்கள். யூகிக்க வேண்டாம். இதை மருத்துவரிடம் ஒப்படைங்கள்.", replyDistress: "இது மருத்துவ ஆலோசனை அல்ல. அழுதால், பயப்பட்டால், அல்லது தனியாக/பாதுகாப்பற்றதாக உணர்ந்தால் உடன் இருங்கள், மைய ஊழியரை அழைங்கள், பயன்பாட்டில் ஆலோசனை பதிவு செய்யச் சொல்லுங்கள். மருத்துவ கேள்விகளை மருத்துவரிடம் ஒப்படைங்கள்." }
 };
 
 const SAMPLE_CASES = [
@@ -791,7 +1120,7 @@ function renderStory() {
 }
 
 function renderShare() {
-  const post = postById(state.storyId);
+  const post = postById(state.storyId) || (state.storyId === "contributors" ? contributorShare() : null);
   if (!post) return `<p class="lead">Pick a story first.</p>`;
   const choices = CHANNELS.map(([id, name, note]) => `
     <button type="button" class="choice${state.channel === id ? " on" : ""}" data-channel="${id}">
@@ -935,10 +1264,17 @@ function renderVoucher() {
     <button class="primary" data-go="clinics">${t("pickClinic")}</button>`;
 }
 
+function clinicLabel(c) {
+  return c[0] === "Mammobus" ? t("mammobus") : c[0];
+}
+function clinicNote(c) {
+  return c[0] === "Mammobus" ? t("mammobusNote") : c[1];
+}
+
 function renderClinics() {
   const list = CLINICS.map((c, i) => `
     <button class="clinic${i === state.clinic ? " on" : ""}" data-clinic="${i}">
-      <strong>${c[0]}</strong><span class="meta">${c[1]}</span>
+      <strong>${clinicLabel(c)}</strong><span class="meta">${clinicNote(c)}</span>
     </button>`).join("");
   const slots = SLOTS.map((s) => `<button type="button" class="chip${s === state.slot ? " on" : ""}" data-slot="${s}">${s}</button>`).join("");
   return `
@@ -959,7 +1295,7 @@ function renderBooked() {
   return `
     <h2>${t("bookedTitle")}</h2>
     <div class="ok-box">
-      <strong>${clinic[0]}</strong><br>${clinic[1]} · ${when.toLocaleDateString()} · ${state.slot}<br><br>${t("reminder")}<br>
+      <strong>${clinicLabel(clinic)}</strong><br>${clinicNote(clinic)} · ${when.toLocaleDateString()} · ${state.slot}<br><br>${t("reminder")}<br>
       ${t("reminderDate")}: ${remind.toLocaleDateString()}
     </div>
     <button class="primary" data-go="b-home">${t("done")}</button>`;
@@ -986,14 +1322,90 @@ function renderLearn() {
 function renderCheckin() {
   const group = (label, names) => `<optgroup label="${esc(label)}">${names.map((name) => `<option${name === state.checkSite ? " selected" : ""}>${esc(name)}</option>`).join("")}</optgroup>`;
   const options = group(t("stretchSites"), RSE) + group(t("serviceCentres"), CENTRES);
+  const volunteer = state.role === "give";
   return `
-    <h2>${t("checkTitle")}</h2>
-    <p class="lead">${t("checkLead")}</p>
+    <h2>${volunteer ? t("volunteerCheck") : t("checkTitle")}</h2>
+    <p class="lead">${volunteer ? t("volunteerCheckLead") : t("checkLead")}</p>
     <div class="voucher"><div class="qr real"><img src="images/checkin-qr.svg" alt=""></div><div class="code">365CPS</div></div>
     <label class="field">${t("site")}</label>
     <select id="site">${options}</select>
-    <button class="primary" id="do-checkin">${t("logAttendance")}</button>
+    <button class="primary" id="do-checkin">${volunteer ? t("volunteerCheck") : t("logAttendance")}</button>
+    ${volunteer && !(state.user && state.user.name) ? `<p class="meta">${t("hourNeedsSign")}</p>` : ""}
     <p class="meta" id="check-msg"></p>`;
+}
+
+function renderVolunteer() {
+  const name = state.user && state.user.name ? state.user.name : "";
+  const hours = name ? volunteerHoursFor(name) : 0;
+  const board = volunteerBoard();
+  const profile = name ? profileFor(name) : { skills: [], languages: [], centre: "" };
+  const draft = state.skillDraft || profile;
+  const fits = name ? rankedShiftsFor(name) : [];
+  const accepted = name ? acceptedShiftFor(name) : null;
+  const medals = [
+    { id: "ambassador", name: t("ambassador"), have: hours >= 3, detail: t("ambassadorDetail"), token: t("tokenPin") },
+    { id: "fighter", name: t("fighter"), have: hours >= 10, detail: t("fighterDetail"), token: t("tokenTee") }
+  ];
+  const icons = {
+    ask: careMark('<path d="M12 3 L13.2 8.8 L19 10 L13.2 11.2 L12 17 L10.8 11.2 L5 10 L10.8 8.8 Z"/>'),
+    checkin: careMark('<rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 8 H11 V11 H8 Z M13 9 H16 M8 14 H16 M8 17 H13"/>')
+  };
+  const skillChips = VOLUNTEER_SKILLS.map(([id, key]) =>
+    `<button type="button" class="chip${(draft.skills || []).includes(id) ? " on" : ""}" data-toggle-skill="${id}">${t(key)}</button>`
+  ).join("");
+  const langChips = VOLUNTEER_LANGS.map(([id, key]) =>
+    `<button type="button" class="chip${(draft.languages || []).includes(id) ? " on" : ""}" data-toggle-vlang="${id}">${t(key)}</button>`
+  ).join("");
+  const centreOptions = CENTRES.map((c) =>
+    `<option${(draft.centre || "") === c ? " selected" : ""}>${esc(c)}</option>`
+  ).join("");
+  const fitCards = fits.length
+    ? fits.map(({ shift, score, reason }) => `
+        <article class="feed-item">
+          <strong>${esc(t(shift.titleKey))}</strong>
+          <span class="meta">${esc(shift.centre)} · ${esc(shift.when)} · ${esc(reason)} · ${score}</span>
+          <button class="ghost" type="button" data-accept-shift="${esc(shift.id)}">${t("acceptShift")}</button>
+        </article>`).join("")
+    : `<p class="meta">${t("noFitShifts")}</p>`;
+  const acceptedBox = accepted
+    ? `<div class="ok-box"><strong>${t("yourShift")}</strong><br>${esc(t(accepted.shift.titleKey))}<br>${esc(accepted.shift.centre)} · ${esc(accepted.shift.when)}
+        <button class="ghost" type="button" data-ask-shift="1">${t("askThisShift")}</button></div>`
+    : "";
+  return `
+    <h2>${t("volunteerHome")}</h2>
+    <p class="lead">${t("volunteerLead")}</p>
+    <div class="kpi"><b>${hours}</b><span>${t("volunteerHours")}</span></div>
+    ${acceptedBox}
+    <h2>${t("yourSkills")}</h2>
+    <p class="lead">${t("yourSkillsLead")}</p>
+    ${name ? `
+      <label class="field">${t("skillCol")}</label>
+      <div class="chips">${skillChips}</div>
+      <label class="field">${t("langCol")}</label>
+      <div class="chips">${langChips}</div>
+      <label class="field">${t("preferredCentre")}</label>
+      <select id="skill-centre"><option value="">—</option>${centreOptions}</select>
+      <button class="primary" id="do-save-skills" type="button">${t("saveSkills")}</button>
+      ${state.skillNote ? `<p class="meta">${esc(state.skillNote)}</p>` : ""}
+    ` : `<p class="meta">${t("hourNeedsSign")}</p>`}
+    <h2>${t("fitsYou")}</h2>
+    <p class="lead">${t("fitsYouLead")}</p>
+    ${fitCards}
+    <div class="stack" style="margin-top:12px">
+      <button class="choice icon-choice" id="do-volunteer-ask" type="button">${icons.ask}<span class="icon-copy"><strong>${t("volunteerAsk")}</strong><span>${t("volunteerAskLead")}</span></span><span class="chev" aria-hidden="true">›</span></button>
+      ${actionCard("checkin", icons.checkin, t("volunteerCheck"), t("volunteerCheckLead"))}
+    </div>
+    <h2>${t("volunteerBadges")}</h2>
+    <div class="stack">
+      ${medals.map((badge) => `
+        <article class="badge-card${badge.have ? " on" : ""}">
+          <img class="badge-img" src="${badgeSrc(badge.id)}" alt="">
+          <span class="icon-copy"><strong>${esc(badge.name)}</strong><span>${badge.have ? ui("earned") : esc(badge.detail)}</span>${badge.have ? `<span class="meta">${esc(badge.token)}</span>` : ""}</span>
+        </article>`).join("")}
+    </div>
+    <h2>${t("volunteerBoard")}</h2>
+    <p class="lead">${t("volunteerBoardLead")}</p>
+    ${board.map((row) => `<article class="feed-item"><strong>${esc(row.name)}</strong><span class="meta">${row.hours} ${esc(t("volunteerHours"))}</span></article>`).join("")}`;
 }
 
 function renderCare() {
@@ -1007,7 +1419,8 @@ function renderCare() {
       <option value="Physiotherapy">${t("svcPhysio")}</option>
     </select>
     <label class="field">${t("centre")}</label>
-    <select id="care-centre">${CENTRES.map((c) => `<option>${c}</option>`).join("")}</select>
+    <select id="care-centre">${CENTRES.concat([t("mammobus")]).map((c) => `<option>${c}</option>`).join("")}</select>
+    <p class="meta">${t("mammobusNote")}</p>
     <label class="field">${t("beforeSession")}</label>
     <textarea id="care-note" placeholder="${esc(t("careNote"))}"></textarea>
     <button class="primary" id="do-care">${t("requestSession")}</button>
@@ -1021,7 +1434,7 @@ function renderDHome() {
     <div class="stack">
       <button class="choice" data-go="give"><strong>${t("giveTitle")}</strong><span>${t("monthChoices")}</span></button>
       <button class="choice" data-go="impact"><strong>${t("impactTitle")}</strong><span>${t("impactLead")}</span></button>
-      <button class="choice" data-go="campaign"><strong>${t("campTitle")}</strong><span>${t("campLead")}</span></button>
+      <button class="choice" data-go="volunteer"><strong>${t("volunteerHome")}</strong><span>${t("volunteerLead")}</span></button>
     </div>`;
 }
 
@@ -1037,6 +1450,9 @@ function renderGive() {
   return `
     <h2>${t("giveTitle")}</h2>
     <p class="lead">${t("giveLead")}</p>
+    <button class="ghost" type="button" data-go="volunteer">${t("volunteerHome")}</button>
+    <p class="meta">${t("giveDirect")}</p>
+    <p class="meta">${t("giveAlongside")}</p>
     <div class="amounts">${amounts}</div>
     <label class="field">${t("method")}</label>
     <div class="chips">${pay}</div>
@@ -1049,25 +1465,6 @@ function renderReceipt() { return Care.renderReceipt(); }
 
 function renderImpact() { return Care.renderImpact(); }
 
-function renderCampaign() {
-  const camps = load("cn_campaigns");
-  const cards = camps.map((c) => {
-    const pct = Math.min(100, Math.round((c.raised / c.goal) * 100));
-    return `<article class="feed-item"><strong>${c.title}</strong><span class="meta">${c.kind} · S$${c.raised} of S$${c.goal}</span><div class="bar"><i style="width:${pct}%"></i></div></article>`;
-  }).join("");
-  return `
-    <h2>${t("campTitle")}</h2>
-    <p class="lead">${t("campLead")}</p>
-    ${cards || `<p class="list-empty">No campaign on this phone yet.</p>`}
-    <label class="field">Campaign name</label>
-    <input id="camp-title" placeholder="Birthday for 365">
-    <label class="field">Type</label>
-    <select id="camp-kind"><option>Birthday</option><option>Run or walk</option></select>
-    <label class="field">Goal (S$)</label>
-    <input id="camp-goal" type="number" min="50" value="200">
-    <button class="primary" id="do-camp">${t("startCamp")}</button>`;
-}
-
 function tableOf(rows, columns) {
   if (!rows.length) return `<p class="list-empty">None yet.</p>`;
   const head = columns.map(([label]) => `<th>${label}</th>`).join("");
@@ -1077,12 +1474,14 @@ function tableOf(rows, columns) {
 
 function renderStaff() {
   const dist = load("cn_distributions");
-  const baseChannel = { app: 240, whatsapp: 186, notice: 64, sms: 95 };
+  const baseChannel = { app: 240, whatsapp: 186, notice: 64, sms: 95, tiktok: 42 };
   const weeks = [["7 Oct", 18], ["14 Oct", 22], ["21 Oct", 19], ["28 Oct", 29]];
   const maxWeek = 29;
   const giftSum = load("cn_gifts").reduce((sum, gift) => sum + Number(gift.amount || 0), 0);
   const cases = SAMPLE_CASES.map((row) => `<tr>${row.map((cell) => `<td>${esc(cell)}</td>`).join("")}</tr>`).join("");
   const localRefs = load("cn_referrals").map((row) => `<tr><td>${esc(row.name)}</td><td>Referral</td><td>${esc(row.clinic)}</td><td>This phone</td></tr>`).join("");
+  const openCount = openShifts().length;
+  const filled = filledShiftCount();
   return `
     <h2>CRM dashboard</h2>
     <p class="lead">${t("staffLead")}</p>
@@ -1093,6 +1492,8 @@ function renderStaff() {
       <div class="kpi"><b>${19 + load("cn_referrals").length}</b><span>New referrals</span></div>
       <div class="kpi"><b>S$${(6450 + giftSum).toLocaleString()}</b><span>Direct gifts</span></div>
       <div class="kpi"><b>71%</b><span>Referred clients reached</span></div>
+      <div class="kpi"><b>${filled}</b><span>${t("filledShifts")}</span></div>
+      <div class="kpi"><b>${openCount}</b><span>${t("openShiftCount")}</span></div>
     </div>
     <h3>Screenings booked, by week</h3>
     <div class="bars">
@@ -1120,9 +1521,24 @@ function renderStaff() {
 
 function renderPeople() {
   const cases = SAMPLE_CASES.map((row) => `<tr>${row.map((cell) => `<td>${esc(cell)}</td>`).join("")}</tr>`).join("");
+  const roster = volunteerRoster();
+  const shiftCards = openShifts().map((shift) => {
+    const top = topMatchForShift(shift);
+    return `<article class="feed-item">
+      <strong>${esc(t(shift.titleKey))}</strong>
+      <span class="meta">${esc(shift.centre)} · ${esc(shift.when)}</span>
+      <span class="meta">${t("suggested")}: ${top ? `${esc(top.name)} · ${esc(top.reason)}` : "—"}</span>
+      ${top ? `<button class="ghost" type="button" data-assign-shift="${esc(shift.id)}" data-assign-name="${esc(top.name)}">${t("assignShift")}</button>` : ""}
+    </article>`;
+  }).join("") || `<p class="list-empty">None yet.</p>`;
   return `
     <h2>People on the register</h2>
     <p class="lead">${t("staffLead")}</p>
+    <h3>${t("volunteerRoster")}</h3>
+    ${tableOf(roster, [["Name", "name"], [t("skillCol"), "skillText"], [t("langCol"), "langText"], [t("hoursCol"), "hours"]])}
+    <h3>${t("openShifts")}</h3>
+    ${shiftCards}
+    ${state.assignNote ? `<p class="meta">${esc(state.assignNote)}</p>` : ""}
     <h3>Client applications</h3>
     ${tableOf(load("cn_clients"), [["Name", "name"], ["Services", "services"], ["Mobile", "mobile"]])}
     <h3>Screening registrations</h3>
@@ -1135,7 +1551,9 @@ function renderPeople() {
     <h3>Gifts</h3>
     ${tableOf(load("cn_gifts"), [["Receipt", "id"], ["Amount", "amount"], ["Method", "pay"]])}
     <h3>Referrals</h3>
-    ${tableOf(load("cn_referrals"), [["Name", "name"], ["Clinic", "clinic"], ["Contact", "phone"]])}`;
+    ${tableOf(load("cn_referrals"), [["Name", "name"], ["Clinic", "clinic"], ["Contact", "phone"]])}
+    <h3>${t("fatigueNotes")}</h3>
+    ${tableOf(load("cn_debriefs").map((row) => ({ ...row, note: row.flag ? t("fatigueFlag") : t("fatigueOk") })), [["Name", "name"], ["Topic", "topic"], ["Note", "note"]])}`;
 }
 
 function draft() { return state.draft || {}; }
@@ -1211,11 +1629,11 @@ const SCREENS = {
   learn: renderLearn,
   checkin: renderCheckin,
   care: renderCare,
+  volunteer: renderVolunteer,
   "d-home": renderDHome,
   give: renderGive,
   receipt: renderReceipt,
   impact: renderImpact,
-  campaign: renderCampaign,
   staff: renderStaff,
   people: renderPeople,
   publish: renderPublish,
@@ -1238,11 +1656,11 @@ const TITLES = {
   learn: ["learnTitle", "brand"],
   checkin: ["checkTitle", "brand"],
   care: ["careTitle", "brand"],
+  volunteer: ["volunteerHome", "brand"],
   "d-home": ["giveTitle", "brand"],
   give: ["giveTitle", "brand"],
   receipt: ["receiptTitle", "brand"],
   impact: ["impactTitle", "brand"],
-  campaign: ["campTitle", "brand"],
   staff: ["staffTitle", "brand"],
   people: ["staffTitle", "brand"],
   publish: ["staffTitle", "brand"],
@@ -1269,9 +1687,10 @@ function tabIcon(name) {
 
 function activeTab() {
   const care = ["b-home", "assess", "voucher", "clinics", "booked", "learn", "checkin", "care"];
-  const give = ["give", "d-home", "receipt", "impact", "campaign", "notify", "certificate", "badges", "share"];
+  const give = ["give", "d-home", "receipt", "impact", "notify", "certificate", "badges", "share", "volunteer"];
+  if (state.screen === "checkin" && state.role === "give") return "volunteer";
   if (care.includes(state.screen)) return "b-home";
-  if (give.includes(state.screen)) return "give";
+  if (give.includes(state.screen)) return state.role === "give" ? "volunteer" : "d-home";
   if (state.screen === "auth") return "auth";
   return "welcome";
 }
@@ -1287,7 +1706,7 @@ function tabHtml() {
   const items = [
     ["welcome", t("navFeed"), "home"],
     ["b-home", t("navCare"), "heart"],
-    ["give", t("navGive"), "gift"],
+    [state.role === "give" ? "volunteer" : "d-home", state.role === "give" ? t("navVolunteer") : t("navGive"), "gift"],
     ["auth", state.user ? t("navAccount") : t("navSign"), "person"]
   ];
   return items.map(([id, label, icon]) => {
@@ -1297,9 +1716,57 @@ function tabHtml() {
 }
 
 function chatLang(topic) {
-  const book = topic === "counselling" ? chatCounselling : chatScreening;
+  const packs = {
+    counselling: chatCounselling,
+    screening: chatScreening,
+    services: chatServices,
+    subsidy: chatSubsidy,
+    walk: chatWalk,
+    rseGuide: chatRseGuide,
+    handover: chatHandover
+  };
+  const book = packs[topic] || chatScreening;
   return book[state.lang] || book.en;
 }
+
+function askGreet() {
+  return state.role === "give" ? fu("greetVolunteer") : fu("greet");
+}
+
+function askOnlyTwo() {
+  return state.role === "give" ? fu("onlyTwoVolunteer") : fu("onlyTwo");
+}
+
+function openVolunteerAsk(fromShift) {
+  state.role = "give";
+  state.chatOpen = true;
+  state.chatLog = [];
+  state.chatTopic = "";
+  state.chatStep = 0;
+  state.chatPick = {};
+  say("bot", askGreet());
+  if (fromShift && state.user && state.user.name) {
+    const accepted = acceptedShiftFor(state.user.name);
+    if (accepted && accepted.shift && accepted.shift.pack) beginTopic(accepted.shift.pack);
+  }
+}
+
+function fatigueWords(text) {
+  return /(tired|exhaust|overwhelm|alone|burnout|fatigue|累|疲惫|孤单|letih|penat|seorang diri|சோர்|தனிமை)/i.test(text || "");
+}
+
+function logVolunteerDebrief() {
+  if (state.role !== "give") return;
+  const topic = state.chatTopic || "ask";
+  const blob = state.chatLog.map((line) => line.text).join(" ");
+  push("cn_debriefs", {
+    name: state.user && state.user.name ? state.user.name : "Volunteer",
+    topic,
+    flag: fatigueWords(blob),
+    at: new Date().toISOString()
+  });
+}
+
 
 function say(who, text) {
   state.chatLog.push({ who, text });
@@ -1343,6 +1810,56 @@ function takePick(value) {
     }
     return;
   }
+  if (state.chatTopic === "services") {
+    if (state.chatStep === 0) {
+      state.chatPick.kind = value;
+      say("user", pack.options.find((item) => item[0] === value)[1]);
+      state.chatStep = 1;
+      const replies = { screen: pack.replyScreen, allied: pack.replyAllied, rse: pack.replyRse };
+      say("bot", replies[value] || pack.replyScreen);
+    }
+    return;
+  }
+  if (state.chatTopic === "subsidy") {
+    if (state.chatStep === 0) {
+      state.chatPick.kind = value;
+      say("user", pack.options.find((item) => item[0] === value)[1]);
+      state.chatStep = 1;
+      const replies = { sfl: pack.replySfl, chas: pack.replyChas, ipc: pack.replyIpc };
+      say("bot", replies[value] || pack.replySfl);
+    }
+    return;
+  }
+  if (state.chatTopic === "walk") {
+    if (state.chatStep === 0) {
+      state.chatPick.kind = value;
+      say("user", pack.options.find((item) => item[0] === value)[1]);
+      state.chatStep = 1;
+      const replies = { say: pack.replySay, stop: pack.replyStop, time: pack.replyTime };
+      say("bot", replies[value] || pack.replySay);
+    }
+    return;
+  }
+  if (state.chatTopic === "rseGuide") {
+    if (state.chatStep === 0) {
+      state.chatPick.kind = value;
+      say("user", pack.options.find((item) => item[0] === value)[1]);
+      state.chatStep = 1;
+      const replies = { count: pack.replyCount, pace: pack.replyPace, time: pack.replyTime };
+      say("bot", replies[value] || pack.replyCount);
+    }
+    return;
+  }
+  if (state.chatTopic === "handover") {
+    if (state.chatStep === 0) {
+      state.chatPick.kind = value;
+      say("user", pack.options.find((item) => item[0] === value)[1]);
+      state.chatStep = 1;
+      const replies = { symptoms: pack.replySymptoms, diagnosis: pack.replyDiagnosis, distress: pack.replyDistress };
+      say("bot", replies[value] || pack.replySymptoms);
+    }
+    return;
+  }
   if (state.chatStep === 0) {
     state.chatPick.concern = value;
     say("user", pack.options.find((item) => item[0] === value)[1]);
@@ -1357,14 +1874,28 @@ function sendTyped(text) {
   if (!q) return;
   say("user", q);
   const folded = q.toLowerCase();
+  if (state.role === "give") {
+    if (/walk|companion|teman|陪同|நடை|door|clinic walk/.test(folded)) beginTopic("walk");
+    else if (/rse|marshal|stretch|pengawal|带队|மேற்பார்வை|chair|kerusi/.test(folded)) beginTopic("rseGuide");
+    else if (/hand over|handover|escalat|distress|symptom|diagnosis|serah|交接|ஒப்படை|chest pain|panic/.test(folded)) beginTopic("handover");
+    else if (/service|physio|nutrition|perkhidmatan|服务|சேவை/.test(folded)) beginTopic("services");
+    else if (/subsid|chas|screen for life|tax|ipc|补贴|மானிய/.test(folded)) beginTopic("subsidy");
+    else say("bot", askOnlyTwo());
+    return;
+  }
   if (/screen|eligib|mammo|cervical|colorectal|saringan|kelayak|筛|资格|乳房|பரிசோத|தகுதி/.test(folded)) beginTopic("screening");
   else if (/counsel|worry|stress|mood|kaunsel|bimbang|辅导|咨询|压力|ஆலோச|கவலை/.test(folded)) beginTopic("counselling");
-  else say("bot", fu("onlyTwo"));
+  else if (/service|rse|stretch|physio|nutrition|perkhidmatan|服务|伸展|சேவை|நீட்சி/.test(folded)) beginTopic("services");
+  else if (/subsid|chas|screen for life|tax|ipc|补贴|மானிய/.test(folded)) beginTopic("subsidy");
+  else say("bot", askOnlyTwo());
 }
 
 function chatReplies() {
   if (!state.chatTopic) {
-    return `<button type="button" data-chat="screening">${chatLang("screening").name}</button><button type="button" data-chat="counselling">${chatLang("counselling").name}</button>`;
+    if (state.role === "give") {
+      return `<button type="button" data-chat="walk">${chatLang("walk").name}</button><button type="button" data-chat="rseGuide">${chatLang("rseGuide").name}</button><button type="button" data-chat="handover">${chatLang("handover").name}</button><button type="button" data-chat="services">${chatLang("services").name}</button><button type="button" data-chat="subsidy">${chatLang("subsidy").name}</button>`;
+    }
+    return `<button type="button" data-chat="screening">${chatLang("screening").name}</button><button type="button" data-chat="counselling">${chatLang("counselling").name}</button><button type="button" data-chat="services">${chatLang("services").name}</button><button type="button" data-chat="subsidy">${chatLang("subsidy").name}</button>`;
   }
   const pack = chatLang(state.chatTopic);
   if (state.chatTopic === "screening") {
@@ -1374,6 +1905,14 @@ function chatReplies() {
     return `<button type="button" data-go="screenreg">${pack.bookScreen}</button><button type="button" data-go="care">${pack.bookCare}</button>`;
   }
   if (state.chatStep === 0) return pack.options.map(([id, label]) => `<button type="button" data-pick="${id}">${label}</button>`).join("");
+  if (state.chatTopic === "walk" || state.chatTopic === "rseGuide" || state.chatTopic === "handover") {
+    return "";
+  }
+  if (state.chatTopic === "services" || state.chatTopic === "subsidy") {
+    if (state.role === "give") return "";
+    const book = chatLang("screening");
+    return `<button type="button" data-go="screenreg">${book.bookScreen}</button><button type="button" data-go="care">${book.bookCare}</button>`;
+  }
   return `<button type="button" data-go="screenreg">${pack.bookScreen}</button><button type="button" data-go="care">${pack.bookCare}</button>`;
 }
 
@@ -1398,7 +1937,7 @@ function renderChat() {
     <div class="chat-log">${bubbles}</div>
     <div class="chat-replies">${chatReplies()}</div>
     <form class="chat-form" id="chat-form">
-      <input id="chat-text" placeholder="${esc(fu("askHint"))}" autocomplete="off">
+      <input id="chat-text" placeholder="${esc(state.role === "give" ? fu("askHintVolunteer") : fu("askHint"))}" autocomplete="off">
       <button type="submit">${esc(fu("chatSend"))}</button>
     </form>`;
   const log = panel.querySelector(".chat-log");
@@ -1436,7 +1975,7 @@ document.body.addEventListener("submit", (event) => {
 });
 
 document.body.addEventListener("click", (event) => {
-  const el = event.target.closest("[data-go],[data-role],[data-lang],[data-set],[data-clinic],[data-slot],[data-amt],[data-pay],[data-story],[data-save],[data-share],[data-filter],[data-feed],[data-channel],[data-image],[data-chat],[data-pick],[data-web],[data-reg],[data-service],[data-prog],[data-badge],[data-reschedule],[data-time],#assess-next,#confirm-book,#do-checkin,#do-care,#do-give,#do-camp,#do-ref,#do-place,#do-publish,#do-auth,#auth-switch,#do-signout,#client-next,#client-save,#screen-next,#screen-save,#do-play,#do-tax,#do-print,#chat-toggle,#back");
+  const el = event.target.closest("[data-go],[data-role],[data-lang],[data-set],[data-clinic],[data-slot],[data-amt],[data-pay],[data-story],[data-save],[data-share],[data-filter],[data-feed],[data-channel],[data-image],[data-chat],[data-pick],[data-web],[data-reg],[data-service],[data-prog],[data-badge],[data-reschedule],[data-time],[data-play-survivor],[data-toggle-skill],[data-toggle-vlang],[data-accept-shift],[data-assign-shift],[data-ask-shift],#assess-next,#confirm-book,#do-checkin,#do-care,#do-give,#do-ref,#do-place,#do-publish,#do-auth,#auth-switch,#do-signout,#client-next,#client-save,#screen-next,#screen-save,#do-play,#do-survivor,#do-volunteer-ask,#do-save-skills,#do-tax,#do-print,#chat-toggle,#back");
   if (!el) return;
   if (el.dataset.reschedule) {
     state.editing = state.editing === el.dataset.reschedule ? "" : el.dataset.reschedule;
@@ -1473,14 +2012,82 @@ document.body.addEventListener("click", (event) => {
     state.chatLog = [];
     state.chatTopic = "";
     state.chatStep = 0;
-    if (state.chatOpen) say("bot", fu("greet"));
+    if (state.chatOpen) say("bot", askGreet());
     render();
     return;
   }
   if (el.id === "chat-toggle") {
+    if (state.chatOpen) logVolunteerDebrief();
     state.chatOpen = !state.chatOpen;
-    if (state.chatOpen && !state.chatLog.length) say("bot", fu("greet"));
+    if (state.chatOpen && !state.chatLog.length) say("bot", askGreet());
     render();
+    return;
+  }
+  if (el.id === "do-volunteer-ask" || el.dataset.askShift) {
+    openVolunteerAsk(true);
+    render();
+    return;
+  }
+  if (el.dataset.toggleSkill) {
+    const name = state.user && state.user.name;
+    if (!name) return;
+    const base = state.skillDraft || profileFor(name);
+    const skills = new Set(base.skills || []);
+    if (skills.has(el.dataset.toggleSkill)) skills.delete(el.dataset.toggleSkill);
+    else skills.add(el.dataset.toggleSkill);
+    state.skillDraft = { ...base, skills: [...skills] };
+    state.skillNote = "";
+    render();
+    return;
+  }
+  if (el.dataset.toggleVlang) {
+    const name = state.user && state.user.name;
+    if (!name) return;
+    const base = state.skillDraft || profileFor(name);
+    const languages = new Set(base.languages || []);
+    if (languages.has(el.dataset.toggleVlang)) languages.delete(el.dataset.toggleVlang);
+    else languages.add(el.dataset.toggleVlang);
+    state.skillDraft = { ...base, languages: [...languages] };
+    state.skillNote = "";
+    render();
+    return;
+  }
+  if (el.id === "do-save-skills") {
+    const name = state.user && state.user.name;
+    if (!name) return;
+    const centre = document.getElementById("skill-centre");
+    const draft = state.skillDraft || profileFor(name);
+    const profile = {
+      skills: draft.skills || [],
+      languages: draft.languages || [],
+      centre: centre ? centre.value : (draft.centre || "")
+    };
+    saveProfile(name, profile);
+    state.skillDraft = profile;
+    state.skillNote = t("skillsSaved");
+    render();
+    return;
+  }
+  if (el.dataset.acceptShift) {
+    const name = state.user && state.user.name;
+    if (!name) {
+      state.afterLogin = "volunteer";
+      go("auth");
+      return;
+    }
+    assignShift(el.dataset.acceptShift, name);
+    state.role = "give";
+    state.skillNote = t("shiftAccepted");
+    render();
+    return;
+  }
+  if (el.dataset.assignShift) {
+    const who = el.dataset.assignName;
+    if (who) {
+      assignShift(el.dataset.assignShift, who);
+      state.assignNote = `${t("shiftAssigned")} ${who}`;
+      render();
+    }
     return;
   }
   if (el.dataset.chat) {
@@ -1526,6 +2133,13 @@ document.body.addEventListener("click", (event) => {
     return;
   }
   if (el.dataset.share) {
+    if (el.dataset.share === "tiktok") {
+      state.storyId = "contributors";
+      state.channel = "tiktok";
+      state.note = "";
+      go("share");
+      return;
+    }
     state.storyId = el.dataset.share;
     state.note = "";
     go("share");
@@ -1544,7 +2158,7 @@ document.body.addEventListener("click", (event) => {
     return;
   }
   if (el.id === "do-place") {
-    const post = postById(state.storyId);
+    const post = postById(state.storyId) || (state.storyId === "contributors" ? contributorShare() : null);
     const channel = CHANNELS.find(([id]) => id === state.channel);
     if (post && channel) {
       push("cn_distributions", { title: post.title, channel: channel[0], at: new Date().toISOString() });
@@ -1589,7 +2203,7 @@ document.body.addEventListener("click", (event) => {
     state.role = el.dataset.role;
     if (el.dataset.role === "staff") state.chatOpen = false;
     state.step = 0;
-    go(el.dataset.role === "give" ? "d-home" : el.dataset.role === "staff" ? "staff" : "b-home");
+    go(el.dataset.role === "give" ? "volunteer" : el.dataset.role === "staff" ? "staff" : "b-home");
     return;
   }
   if (el.dataset.go) {
@@ -1602,6 +2216,14 @@ document.body.addEventListener("click", (event) => {
       return;
     }
     if (el.dataset.go === "welcome") state.webStory = null;
+    if (el.dataset.go === "volunteer") {
+      state.role = "give";
+      state.skillDraft = null;
+      state.skillNote = "";
+    }
+    if (["b-home", "assess", "care", "screenreg", "clinics", "voucher"].includes(el.dataset.go)) {
+      state.role = "care";
+    }
     if (el.dataset.go === "assess") {
       state.step = 0;
       if (state.chatPick.test) {
@@ -1659,12 +2281,38 @@ document.body.addEventListener("click", (event) => {
     go("booked");
     return;
   }
+  if (el.id === "do-survivor" || el.dataset.playSurvivor) {
+    state.survivorPlay = true;
+    render();
+    if (window.speechSynthesis) {
+      window.speechSynthesis.cancel();
+      const voice = new SpeechSynthesisUtterance(t("survivorBody"));
+      voice.lang = { zh: "zh-CN", ms: "ms-MY", ta: "ta-IN" }[state.lang] || "en-SG";
+      window.speechSynthesis.speak(voice);
+    }
+    return;
+  }
   if (el.id === "do-checkin") {
     const site = document.getElementById("site").value;
     state.checkSite = site;
+    if (state.role === "give" && !(state.user && state.user.name)) {
+      state.afterLogin = "checkin";
+      go("auth");
+      return;
+    }
     push("cn_checkins", { site, at: new Date().toISOString() });
+    if (state.role === "give") {
+      const accepted = acceptedShiftFor(state.user.name);
+      push("cn_hours", {
+        name: state.user.name,
+        hours: 1,
+        site,
+        skill: accepted && accepted.shift ? accepted.shift.skill : "",
+        at: new Date().toISOString()
+      });
+    }
     render();
-    document.getElementById("check-msg").textContent = t("checked");
+    document.getElementById("check-msg").textContent = state.role === "give" ? t("hourLogged") : t("checked");
     return;
   }
   if (el.id === "do-care") {
@@ -1702,19 +2350,6 @@ document.body.addEventListener("click", (event) => {
     go("receipt");
     return;
   }
-  if (el.id === "do-camp") {
-    const title = document.getElementById("camp-title").value.trim() || "Champion for 365";
-    const goal = Number(document.getElementById("camp-goal").value) || 200;
-    push("cn_campaigns", {
-      title,
-      kind: document.getElementById("camp-kind").value,
-      goal,
-      raised: Math.round(goal * 0.15),
-      at: new Date().toISOString()
-    });
-    render();
-    return;
-  }
   if (el.id === "do-ref") {
     if (!document.getElementById("ref-consent").checked) {
       document.getElementById("ref-msg").textContent = "Consent is required.";
@@ -1737,15 +2372,6 @@ document.body.addEventListener("click", (event) => {
 
 state.user = sessionUser();
 ensurePosts();
-if (!load("cn_campaigns").length) {
-  save("cn_campaigns", [{
-    title: "Walk for Hope",
-    kind: "Run or walk",
-    goal: 500,
-    raised: 310,
-    at: new Date().toISOString()
-  }]);
-}
 
 render();
 Care.boot();

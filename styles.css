@@ -472,6 +472,36 @@ textarea { min-height: 80px; resize: vertical; }
 }
 .news img, .hero-img { width: 100%; height: 168px; object-fit: cover; display: block; }
 .hero-img { height: auto; max-height: none; object-fit: contain; background: white; border-radius: 18px; }
+.video-poster {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+.video-poster .hero-img { height: 168px; object-fit: cover; }
+.play-mark {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 56px;
+  height: 56px;
+  margin: -28px 0 0 -28px;
+  border-radius: 50%;
+  background: rgba(255, 246, 238, 0.94);
+  box-shadow: 0 4px 16px rgba(28, 22, 18, 0.18);
+}
+.play-mark::after {
+  content: "";
+  position: absolute;
+  left: 22px;
+  top: 18px;
+  border-style: solid;
+  border-width: 10px 0 10px 16px;
+  border-color: transparent transparent transparent var(--red);
+}
 .news-body { padding: 12px 12px 4px; }
 .news-body strong, .story h3 { display: block; margin-top: 6px; font-size: 16px; }
 .news-actions { display: flex; gap: 8px; padding: 8px 12px 12px; }

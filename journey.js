@@ -48,7 +48,7 @@ const UI = {
     regReceived: "Registration received", reviewDays: "The team will review eligibility within 5–7 working days and write with booking instructions for {clinic}.", yourClinic: "your clinic",
     needGift: "Confirm a monthly gift to see the receipt.", taxReceipt: "Tax receipt", receiptFor: "Receipt", ipcLine: "A real IPC gift qualifies for a 250% tax deduction.",
     seeImpact: "See your impact", impactUpdate: "Impact update", taxCert: "Tax claim and certificate", badges: "Badges", donated: "Donated", signupNext: "Next, complete client registration.", downloadReceipt: "Download receipt",
-    adopt: "Adopt-a-Screening", adoptLead: "Your gifts are shown as screenings and classes, not as a general pool.",
+    adopt: "Your impact", adoptLead: "Your gifts are shown as screenings and classes.",
     screeningsYou: "Screenings subsidised by you", classesYou: "Exercise classes funded", thankYou: "Thank-you and update",
     navigator: "From your care navigator", thankNote: "Thank you. The gift you made is already attached to a screening place. I will tell you when it is used.",
     playNote: "Play thank-you", playingNow: "Playing the navigator's thank-you.", update: "Update", redeemed: "The screening voucher you funded was redeemed today at an NUP clinic. Thank you for protecting a life.",
@@ -93,7 +93,7 @@ const UI = {
     regReceived: "已收到登记", reviewDays: "团队会在 5 至 7 个工作日内审核资格，并把预约说明发给{clinic}。", yourClinic: "你的诊所",
     needGift: "确认每月捐赠后可以查看收据。", taxReceipt: "税务收据", receiptFor: "收据", ipcLine: "真实的 IPC 捐赠可享有 250% 税务扣除。",
     seeImpact: "查看你的成效", impactUpdate: "成效更新", taxCert: "税务申报与证书", badges: "徽章", donated: "已捐赠", signupNext: "下一步是完成服务对象登记。", downloadReceipt: "下载收据",
-    adopt: "认领一次筛查", adoptLead: "捐赠会显示为筛查和课程，而不是笼统的行政经费。",
+    adopt: "你的成效", adoptLead: "捐赠会显示为筛查和课程。",
     screeningsYou: "由你资助的筛查", classesYou: "由你资助的运动课", thankYou: "致谢与更新",
     navigator: "来自你的护理导航员", thankNote: "谢谢你。这笔捐赠已经对应一个筛查名额。用到的时候我会告诉你。",
     playNote: "播放致谢", playingNow: "正在播放导航员的致谢。", update: "更新", redeemed: "你资助的筛查券今天已在一家 NUP 诊所兑现。谢谢你守护一个生命。",
@@ -138,7 +138,7 @@ const UI = {
     regReceived: "Pendaftaran diterima", reviewDays: "Pasukan akan menyemak kelayakan dalam 5–7 hari bekerja dan menulis arahan tempahan untuk {clinic}.", yourClinic: "klinik anda",
     needGift: "Sahkan derma bulanan untuk melihat resit.", taxReceipt: "Resit cukai", receiptFor: "Resit", ipcLine: "Hadiah IPC sebenar layak untuk potongan cukai 250%.",
     seeImpact: "Lihat impak anda", impactUpdate: "Kemas kini impak", taxCert: "Tuntutan cukai dan sijil", badges: "Lencana", donated: "Derma", signupNext: "Seterusnya, lengkapkan pendaftaran klien.", downloadReceipt: "Muat turun resit",
-    adopt: "Angkat satu saringan", adoptLead: "Derma anda ditunjukkan sebagai saringan dan kelas, bukan kumpulan am.",
+    adopt: "Impak anda", adoptLead: "Derma anda ditunjukkan sebagai saringan dan kelas.",
     screeningsYou: "Saringan yang anda subsidi", classesYou: "Kelas senaman yang dibiayai", thankYou: "Ucapan terima kasih dan kemas kini",
     navigator: "Daripada navigator jagaan anda", thankNote: "Terima kasih. Derma anda sudah dipautkan kepada satu tempat saringan. Saya akan beritahu apabila ia digunakan.",
     playNote: "Mainkan ucapan terima kasih", playingNow: "Ucapan navigator sedang dimainkan.", update: "Kemas kini", redeemed: "Baucar saringan yang anda biayai ditebus hari ini di klinik NUP. Terima kasih kerana melindungi satu nyawa.",
@@ -183,7 +183,7 @@ const UI = {
     regReceived: "பதிவு பெறப்பட்டது", reviewDays: "குழு 5–7 வேலை நாட்களில் தகுதியைப் பரிசீலித்து {clinic}க்கான பதிவு வழிமுறையை எழுதும்.", yourClinic: "உங்கள் மருத்துவமனை",
     needGift: "ரசீதைப் பார்க்க மாத நன்கொடையை உறுதிசெய்யுங்கள்.", taxReceipt: "வரி ரசீது", receiptFor: "ரசீது", ipcLine: "உண்மையான IPC நன்கொடை 250% வரி விலக்குக்கு தகுதி.",
     seeImpact: "உங்கள் தாக்கத்தைப் பாருங்கள்", impactUpdate: "தாக்க புதுப்பிப்பு", taxCert: "வரி கோரிக்கையும் சான்றிதழும்", badges: "பதக்கங்கள்", donated: "நன்கொடை", signupNext: "அடுத்து, சேவை பதிவை முடிக்கவும்.", downloadReceipt: "ரசீதைப் பதிவிறக்கு",
-    adopt: "ஒரு பரிசோதனையை தத்தெடு", adoptLead: "உங்கள் கொடைகள் பொது நிதியாக அல்ல, பரிசோதனைகளாகவும் வகுப்புகளாகவும் காட்டப்படும்.",
+    adopt: "உங்கள் தாக்கம்", adoptLead: "உங்கள் கொடைகள் பரிசோதனைகளாகவும் வகுப்புகளாகவும் காட்டப்படும்.",
     screeningsYou: "நீங்கள் மானியம் அளித்த பரிசோதனைகள்", classesYou: "நிதியளித்த உடற்பயிற்சி வகுப்புகள்", thankYou: "நன்றியும் புதுப்பிப்பும்",
     navigator: "உங்கள் பராமரிப்பு வழிகாட்டியிடமிருந்து", thankNote: "நன்றி. நீங்கள் அளித்த கொடை ஏற்கெனவே ஒரு பரிசோதனை இடத்துடன் இணைக்கப்பட்டுள்ளது. பயன்படும்போது சொல்கிறேன்.",
     playNote: "நன்றியை இயக்கு", playingNow: "வழிகாட்டியின் நன்றி இயங்குகிறது.", update: "புதுப்பிப்பு", redeemed: "நீங்கள் நிதியளித்த பரிசோதனை சீட்டு இன்று ஒரு NUP மருத்துவமனையில் பயன்படுத்தப்பட்டது. ஒரு உயிரைக் காத்ததற்கு நன்றி.",
@@ -304,14 +304,199 @@ function donorTotals() {
   }, { screenings: 0, classes: 0 });
 }
 
+function volunteerHoursFor(name) {
+  return load("cn_hours").filter((row) => row.name === name).reduce((sum, row) => sum + (row.hours || 1), 0);
+}
+
+const VOLUNTEER_SKILLS = [
+  ["walk", "skillWalk"],
+  ["rse", "skillRse"],
+  ["talk", "skillTalk"],
+  ["greeter", "skillGreeter"],
+  ["mammobus", "skillMammobus"]
+];
+
+const VOLUNTEER_LANGS = [
+  ["en", "langSkillEn"],
+  ["zh", "langSkillZh"],
+  ["ms", "langSkillMs"],
+  ["ta", "langSkillTa"]
+];
+
+const SEED_VOLUNTEERS = [
+  { name: "Aisha R.", skills: ["walk", "rse"], languages: ["ms", "en"], centre: "Tampines Social Service Centre" },
+  { name: "Tan K. L.", skills: ["talk", "greeter"], languages: ["zh", "en"], centre: "Clementi Social Service Centre" },
+  { name: "Muthu S.", skills: ["walk", "mammobus"], languages: ["ta", "en"], centre: "Ang Mo Kio Social Service Centre" }
+];
+
+const SEED_SHIFTS = [
+  { id: "shift-walk-tampines", skill: "walk", language: "ms", centre: "Tampines Social Service Centre", when: "Sat morning", titleKey: "shiftWalk", pack: "walk" },
+  { id: "shift-rse-amk", skill: "rse", language: "en", centre: "NHG Ang Mo Kio Polyclinic: Level 1, Community Plaza", when: "Weekday 7:50", titleKey: "shiftRse", pack: "rseGuide" },
+  { id: "shift-talk-clementi", skill: "talk", language: "zh", centre: "Clementi Social Service Centre", when: "Sat 10:00", titleKey: "shiftTalk", pack: "services" },
+  { id: "shift-mammo", skill: "mammobus", language: "en", centre: "Mammobus", when: "This month", titleKey: "shiftMammobus", pack: "handover" }
+];
+
+function skillLabel(id) {
+  const row = VOLUNTEER_SKILLS.find((item) => item[0] === id);
+  return row ? t(row[1]) : id;
+}
+
+function langSkillLabel(id) {
+  const row = VOLUNTEER_LANGS.find((item) => item[0] === id);
+  return row ? t(row[1]) : id;
+}
+
+function profileFor(name) {
+  if (!name) return { skills: [], languages: [], centre: "" };
+  const saved = loadMap("cn_skills")[name];
+  if (saved && typeof saved === "object") {
+    return {
+      skills: Array.isArray(saved.skills) ? saved.skills : [],
+      languages: Array.isArray(saved.languages) ? saved.languages : [],
+      centre: saved.centre || ""
+    };
+  }
+  const seed = SEED_VOLUNTEERS.find((row) => row.name === name);
+  if (seed) return { skills: seed.skills.slice(), languages: seed.languages.slice(), centre: seed.centre };
+  return { skills: [], languages: [], centre: "" };
+}
+
+function saveProfile(name, profile) {
+  if (!name) return;
+  const map = loadMap("cn_skills");
+  map[name] = {
+    skills: profile.skills || [],
+    languages: profile.languages || [],
+    centre: profile.centre || ""
+  };
+  save("cn_skills", map);
+}
+
+function matchShift(shift, profile) {
+  let score = 0;
+  if ((profile.skills || []).includes(shift.skill)) score += 2;
+  if ((profile.languages || []).includes(shift.language)) score += 2;
+  if (profile.centre && shift.centre && (shift.centre === profile.centre || shift.centre.indexOf(profile.centre) !== -1 || profile.centre.indexOf(shift.centre) !== -1)) {
+    score += 1;
+  }
+  return score;
+}
+
+function matchReason(shift, profile) {
+  const bits = [];
+  if ((profile.skills || []).includes(shift.skill)) bits.push(skillLabel(shift.skill));
+  if ((profile.languages || []).includes(shift.language)) bits.push(langSkillLabel(shift.language));
+  if (profile.centre && shift.centre && (shift.centre === profile.centre || shift.centre.indexOf(profile.centre) !== -1 || profile.centre.indexOf(shift.centre) !== -1)) {
+    bits.push(profile.centre);
+  }
+  return bits.length ? bits.join(" · ") : t("matchWeak");
+}
+
+function shiftById(id) {
+  return SEED_SHIFTS.find((row) => row.id === id);
+}
+
+function openShifts() {
+  const taken = new Set(load("cn_assignments").map((row) => row.shiftId));
+  return SEED_SHIFTS.filter((shift) => !taken.has(shift.id));
+}
+
+function filledShiftCount() {
+  return load("cn_assignments").length;
+}
+
+function volunteerRoster() {
+  const names = new Set(SEED_VOLUNTEERS.map((row) => row.name));
+  Object.keys(loadMap("cn_skills")).forEach((name) => names.add(name));
+  load("cn_hours").forEach((row) => { if (row.name) names.add(row.name); });
+  load("cn_assignments").forEach((row) => { if (row.name) names.add(row.name); });
+  return [...names].map((name) => {
+    const profile = profileFor(name);
+    return {
+      name,
+      skills: profile.skills,
+      languages: profile.languages,
+      centre: profile.centre,
+      hours: volunteerHoursFor(name),
+      skillText: (profile.skills || []).map(skillLabel).join(", ") || "—",
+      langText: (profile.languages || []).map(langSkillLabel).join(", ") || "—"
+    };
+  }).sort((a, b) => b.hours - a.hours || a.name.localeCompare(b.name));
+}
+
+function rankedShiftsFor(name) {
+  const profile = profileFor(name);
+  return openShifts()
+    .map((shift) => ({ shift, score: matchShift(shift, profile), reason: matchReason(shift, profile) }))
+    .filter((row) => row.score > 0)
+    .sort((a, b) => b.score - a.score);
+}
+
+function topMatchForShift(shift) {
+  return volunteerRoster()
+    .map((row) => ({ ...row, score: matchShift(shift, row), reason: matchReason(shift, row) }))
+    .filter((row) => row.score > 0)
+    .sort((a, b) => b.score - a.score)[0] || null;
+}
+
+function acceptedShiftFor(name) {
+  if (!name) return null;
+  const row = load("cn_assignments").find((item) => item.name === name);
+  if (!row) return null;
+  const shift = shiftById(row.shiftId);
+  return shift ? { ...row, shift } : null;
+}
+
+function assignShift(shiftId, name) {
+  if (!shiftId || !name) return;
+  const list = load("cn_assignments").filter((row) => row.shiftId !== shiftId);
+  list.unshift({ shiftId, name, at: new Date().toISOString() });
+  save("cn_assignments", list.slice(0, 40));
+}
+
+function badgeSrc(id) {
+  return (id === "ambassador" || id === "fighter") ? `images/badge-${id}.svg` : `images/badge-${id}.jpg`;
+}
+
+function contributorShare() {
+  const names = volunteerBoard().slice(0, 4).map((row) => row.name).join(", ");
+  return {
+    id: "contributors",
+    tag: "promo",
+    title: t("topContributors"),
+    body: names,
+    when: t("volunteerHours"),
+    where: "",
+    audience: "",
+    image: ""
+  };
+}
+
+function volunteerBoard() {
+  const seed = [
+    { name: "Aisha R.", hours: 12 },
+    { name: "Tan K. L.", hours: 8 },
+    { name: "Muthu S.", hours: 5 }
+  ];
+  const tally = {};
+  seed.forEach((row) => { tally[row.name] = row.hours; });
+  load("cn_hours").forEach((row) => {
+    tally[row.name] = (tally[row.name] || 0) + (row.hours || 1);
+  });
+  return Object.keys(tally).map((name) => ({ name, hours: tally[name] })).sort((a, b) => b.hours - a.hours);
+}
+
 function badges() {
   const gifts = load("cn_gifts").length;
   const shares = load("cn_shares").length;
   const months = state.user ? state.user.months || 0 : 0;
+  const hours = state.user && state.user.name ? volunteerHoursFor(state.user.name) : 0;
   return [
     { id: "ally", name: ui("ally"), have: gifts > 0 || months > 0, detail: ui("allyDetail") },
     { id: "advocate", name: ui("advocate"), have: shares >= 3, detail: ui("advocateDetail") },
-    { id: "guardian", name: ui("guardian"), have: months >= 6, detail: ui("guardianDetail") }
+    { id: "guardian", name: ui("guardian"), have: months >= 6, detail: ui("guardianDetail") },
+    { id: "ambassador", name: t("ambassador"), have: hours >= 3, detail: t("ambassadorDetail"), token: t("tokenPin") },
+    { id: "fighter", name: t("fighter"), have: hours >= 10, detail: t("fighterDetail"), token: t("tokenTee") }
   ];
 }
 
@@ -331,6 +516,16 @@ function shareRow(id) {
 }
 
 const FEED_TEXT = {
+  6638: {
+    zh: { title: "爱心午餐：认清结直肠癌迷思、筛查与新办法", excerpt: "对未知的担心有时会耽误检查。了解结直肠癌，有助于你做出更清楚的健康决定。与吴医生一起听一场说明：常见迷思、筛查，以及现在可用的处理方式。" },
+    ms: { title: "Makan tengah hari kasih: kanser kolorektal – mitos, saringan dan penyelesaian moden", excerpt: "Ketakutan terhadap yang tidak diketahui kadang melambatkan pemeriksaan. Memahami kanser kolorektal membantu anda buat keputusan kesihatan yang lebih jelas. Sertai sesi dengan Dr Ng Jing Yu tentang mitos, saringan dan penyelesaian semasa." },
+    ta: { title: "அன்பு மதிய உணவு: பெருங்குடல் புற்றுநோய் – கட்டுக்கதை, பரிசோதனை, நவீன தீர்வு", excerpt: "தெரியாததைப் பற்றிய பயம் சில நேரம் பரிசோதனையைத் தாமதப்படுத்தும். பெருங்குடல் புற்றுநோயை அறிந்தால் தெளிவான முடிவு எடுக்கலாம். மருத்துவர் Ng உடன் கட்டுக்கதை, பரிசோதனை, தற்போதைய வழிகள் பற்றிக் கேளுங்கள்." }
+  },
+  6635: {
+    zh: { title: "365直播：与癌共处 – 缓和医疗能为患者做什么", excerpt: "缓和医疗常被当成临终阶段的事，其实它更早就能帮患者处理症状、维持生活品质。这场直播说明缓和医疗真正的意思，以及什么时候可以开始谈。" },
+    ms: { title: "365Live: hidup bersama kanser – penjagaan paliatif untuk pesakit kanser", excerpt: "Penjagaan paliatif sering dikaitkan dengan penghujung hayat, tetapi ia boleh membantu lebih awal untuk mengurus simptom dan mengekalkan kualiti hidup. Sesi ini menerangkan maksud sebenar penjagaan paliatif dan bila ia boleh dimulakan." },
+    ta: { title: "365Live: புற்றுநோயுடன் வாழ்வது – நோயாளிகளுக்கான பல்லியேட்டிவ் பராமரிப்பு", excerpt: "பல்லியேட்டிவ் பராமரிப்பு இறுதிக் கட்டத்துடன் மட்டும் இணைக்கப்படுகிறது. ஆனால் அறிகுறிகளைக் கையாளவும் வாழ்க்கைத் தரத்தைக் காக்கவும் அது முன்பே உதவும். இது உண்மையில் என்ன, எப்போது தொடங்கலாம் என்பதை இந்த நிகழ்வு விளக்கும்." }
+  },
   6260: {
     zh: { title: "爱心午餐：活得更自在，少一些压力", excerpt: "认识压力的信号，并练习自我照顾。适量的压力是日常挑战的自然反应；长期压力则会影响身心。这场讲座会说明如何发现有害压力，并在不确定的时候照顾自己。" },
     ms: { title: "Makan tengah hari kasih: hidup lebih tenang, kurang stres", excerpt: "Kenali tanda stres dan amalkan penjagaan diri. Stres yang singkat adalah tindak balas semula jadi. Stres yang berpanjangan menjejaskan minda dan badan. Sesi ini menunjukkan cara mengenalinya dan menjaga diri." },
@@ -442,8 +637,8 @@ const Care = {
       const snap = accountSnapshot();
       const list = badges().map((badge) => `
         <button class="badge-card${badge.have ? " on" : ""}" data-go="badges" type="button">
-          <img class="badge-img" src="images/badge-${badge.id}.jpg" alt="">
-          <span class="icon-copy"><strong>${esc(badge.name)}</strong><span>${badge.have ? ui("earned") : esc(badge.detail)}</span></span>
+          <img class="badge-img" src="${badgeSrc(badge.id)}" alt="">
+          <span class="icon-copy"><strong>${esc(badge.name)}</strong><span>${badge.have ? ui("earned") : esc(badge.detail)}</span>${badge.have && badge.token ? `<span class="meta">${esc(badge.token)}</span>` : ""}</span>
         </button>`).join("");
       return `
         <h2>${esc(state.user.name)}</h2>
@@ -557,7 +752,7 @@ const Care = {
         <select id="s-first"><option value="yes">${ui("yes")}</option><option value="no">${ui("no")}</option></select>
         <label class="field">${ui("yearLast")}</label><input id="s-year" inputmode="numeric" placeholder="${esc(ui("yearHint"))}">
         <label class="field">${ui("clinic")}</label>
-        <select id="s-clinic">${CLINICS.map((c) => `<option>${c[0]}, ${c[1]}</option>`).join("")}</select>
+        <select id="s-clinic">${CLINICS.map((c) => `<option>${c[0] === "Mammobus" ? `${t("mammobus")} — ${t("mammobusNote")}` : `${c[0]}, ${c[1]}`}</option>`).join("")}</select>
         <button class="primary" id="screen-next" type="button">${ui("continue")}</button>`;
     }
     if (step === 3) {
@@ -646,10 +841,11 @@ const Care = {
   renderBadges() {
     const cards = badges().map((badge) => `
       <article class="badge-card${badge.have ? " on" : ""}">
-        <img class="badge-img" src="images/badge-${badge.id}.jpg" alt="">
+        <img class="badge-img" src="${badgeSrc(badge.id)}" alt="">
         <span class="icon-copy">
           <strong>${esc(badge.name)}</strong>
           <span>${badge.have ? ui("earned") : esc(badge.detail)}</span>
+          ${badge.have && badge.token ? `<span class="meta">${esc(badge.token)}</span>` : ""}
           ${shareRow(badge.id)}
         </span>
       </article>`).join("");
@@ -859,7 +1055,7 @@ const Care = {
       return {
         id: item.id,
         kind,
-        title: (item.title.rendered || "").replace(/&#8211;/g, "–").replace(/<[^>]+>/g, ""),
+        title: (item.title.rendered || "").replace(/&#8211;/g, "–").replace(/&#038;/g, "&").replace(/&amp;/g, "&").replace(/<[^>]+>/g, ""),
         excerpt: (excerpt || text).slice(0, 280),
         date: (item.date || "").slice(0, 10),
         venue: "",
@@ -870,7 +1066,7 @@ const Care = {
     try {
       const [events, articles] = await Promise.all([
         fetch("https://www.365cps.org.sg/wp-json/wp/v2/events?per_page=6&_embed=1").then((res) => { if (!res.ok) throw new Error("events"); return res.json(); }),
-        fetch("https://www.365cps.org.sg/wp-json/wp/v2/posts?per_page=4&_embed=1").then((res) => { if (!res.ok) throw new Error("posts"); return res.json(); })
+        fetch("https://www.365cps.org.sg/wp-json/wp/v2/posts?per_page=6&_embed=1").then((res) => { if (!res.ok) throw new Error("posts"); return res.json(); })
       ]);
       if (!Array.isArray(events) || !Array.isArray(articles)) throw new Error("shape");
       state.feed = { events: events.map((item) => normalize(item, "event")), articles: articles.map((item) => normalize(item, "article")) };
