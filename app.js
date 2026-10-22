@@ -161,15 +161,15 @@ const I18N = {
     volunteerCheck: "Clock a service hour",
     volunteerCheckLead: "Scan the QR at a stretching site or a service centre. One check-in is one hour.",
     volunteerHours: "Hours this month",
-    volunteerBoard: "Hours this month",
-    volunteerBoardLead: "Display names only. No NRIC, phone, or email.",
+    volunteerBoard: "Volunteer leaderboard",
+    volunteerBoardLead: "Top 3 volunteers this month",
     volunteerBadges: "Volunteer medals",
     ambassador: "Bronze Care Ambassador",
-    ambassadorDetail: "Clock 3 service hours. The centre then hands you an enamel pin.",
+    ambassadorDetail: "Clock 3 service hours to unlock a physical enamel pin at the centre.",
     fighter: "Gold Cancer Fighter",
-    fighterDetail: "Clock 10 service hours. The centre then hands you a dri-fit tee.",
-    tokenPin: "Physical token: enamel pin, collected at the centre.",
-    tokenTee: "Physical token: dri-fit tee, collected at the centre.",
+    fighterDetail: "Clock 10 service hours to unlock a physical dri-fit tee at the centre.",
+    tokenPin: "Enamel pin — collect it at the centre.",
+    tokenTee: "Dri-fit tee — collect it at the centre.",
     hourLogged: "One service hour logged.",
     hourNeedsSign: "Sign in so this hour is stored on your display name.",
     giveDirect: "A PayNow or card gift stays with 365CPS. There is no third-party cut on this channel.",
@@ -199,10 +199,13 @@ const I18N = {
     langSkillMs: "Bahasa Melayu",
     langSkillTa: "தமிழ்",
     yourSkills: "Your skills",
-    yourSkillsLead: "Pick what you can do. Display name only. No NRIC, phone, or email.",
+    yourSkillsLead: "Choose the roles you can take, or add another skill below.",
     preferredCentre: "Preferred centre",
     saveSkills: "Save skills",
     skillsSaved: "Skills saved on this phone.",
+    addSkill: "Add skill",
+    addSkillHint: "Another skill, e.g. first aid",
+    skillExists: "That skill is already on your list.",
     fitsYou: "Fits you",
     fitsYouLead: "Open shifts scored by skill, language, and centre.",
     matchWeak: "Partial fit",
@@ -361,16 +364,16 @@ const I18N = {
     volunteerCheck: "记录一小时服务",
     volunteerCheckLead: "在伸展点或服务中心扫码。一次签到为一小时。",
     volunteerHours: "本月时数",
-    volunteerBoard: "本月时数",
-    volunteerBoardLead: "只显示账户显示名。不含身份证、电话或电邮。",
+    volunteerBoard: "义工排行榜",
+    volunteerBoardLead: "本月前三名义工",
     volunteerBadges: "义工奖章",
     ambassador: "铜质关怀大使",
-    ambassadorDetail: "累计 3 小时后，中心发给珐琅徽章。",
+    ambassadorDetail: "累计 3 小时服务，即可在中心领取实体珐琅徽章。",
     fighter: "金质抗癌战士",
-    fighterDetail: "累计 10 小时后，中心发给速干上衣。",
+    fighterDetail: "累计 10 小时服务，即可在中心领取实体速干上衣。",
     hourNeedsSign: "登录后，这小时会记在你的显示名称下。",
-    tokenPin: "实物：珐琅徽章，到中心领取。",
-    tokenTee: "实物：速干上衣，到中心领取。",
+    tokenPin: "珐琅徽章 — 请到中心领取。",
+    tokenTee: "速干上衣 — 请到中心领取。",
     hourLogged: "已记录一小时服务。",
     giveDirect: "PayNow 或信用卡捐赠留给 365CPS。此渠道没有第三方抽成。",
     giveAlongside: "生日和活动筹款可以与机构筹款并存。直接捐赠并不取代那些合作。",
@@ -399,10 +402,13 @@ const I18N = {
     langSkillMs: "Bahasa Melayu",
     langSkillTa: "தமிழ்",
     yourSkills: "你的技能",
-    yourSkillsLead: "选择你会做的事。只显示账户显示名。不含身份证、电话或电邮。",
+    yourSkillsLead: "选择你能承担的角色，或在下方新增一项技能。",
     preferredCentre: "偏好中心",
     saveSkills: "保存技能",
     skillsSaved: "技能已保存在此手机。",
+    addSkill: "添加技能",
+    addSkillHint: "其他技能，例如急救",
+    skillExists: "这项技能已在你的列表中。",
     fitsYou: "适合你",
     fitsYouLead: "按技能、语言和中心为开放班次打分。",
     matchWeak: "部分匹配",
@@ -561,15 +567,15 @@ const I18N = {
     volunteerCheck: "Catat satu jam perkhidmatan",
     volunteerCheckLead: "Imbas QR di tapak regangan atau pusat perkhidmatan. Satu daftar masuk ialah satu jam.",
     volunteerHours: "Jam bulan ini",
-    volunteerBoard: "Jam bulan ini",
-    volunteerBoardLead: "Nama paparan akaun sahaja. Tiada NRIC, telefon, atau e-mel.",
+    volunteerBoard: "Papan pendahulu sukarelawan",
+    volunteerBoardLead: "3 sukarelawan teratas bulan ini",
     volunteerBadges: "Pingat sukarelawan",
     ambassador: "Duta Jagaan Gangsa",
-    ambassadorDetail: "Catat 3 jam. Pusat kemudian menyerahkan pin enamel.",
+    ambassadorDetail: "Catat 3 jam perkhidmatan untuk membuka pin enamel fizikal di pusat.",
     fighter: "Pejuang Kanser Emas",
-    fighterDetail: "Catat 10 jam. Pusat kemudian menyerahkan baju dri-fit.",
-    tokenPin: "Token fizikal: pin enamel, diambil di pusat.",
-    tokenTee: "Token fizikal: baju dri-fit, diambil di pusat.",
+    fighterDetail: "Catat 10 jam perkhidmatan untuk membuka baju dri-fit fizikal di pusat.",
+    tokenPin: "Pin enamel — ambil di pusat.",
+    tokenTee: "Baju dri-fit — ambil di pusat.",
     hourLogged: "Satu jam perkhidmatan dicatat.",
     hourNeedsSign: "Log masuk supaya jam ini disimpan pada nama paparan anda.",
     giveDirect: "Derma PayNow atau kad kekal dengan 365CPS. Tiada potongan pihak ketiga pada saluran ini.",
@@ -599,10 +605,13 @@ const I18N = {
     langSkillMs: "Bahasa Melayu",
     langSkillTa: "தமிழ்",
     yourSkills: "Kemahiran anda",
-    yourSkillsLead: "Pilih apa yang anda boleh buat. Nama paparan sahaja. Tiada NRIC, telefon, atau e-mel.",
+    yourSkillsLead: "Pilih peranan yang anda boleh ambil, atau tambah kemahiran lain di bawah.",
     preferredCentre: "Pusat pilihan",
     saveSkills: "Simpan kemahiran",
     skillsSaved: "Kemahiran disimpan pada telefon ini.",
+    addSkill: "Tambah kemahiran",
+    addSkillHint: "Kemahiran lain, cth. pertolongan cemas",
+    skillExists: "Kemahiran itu sudah ada dalam senarai anda.",
     fitsYou: "Sesuai untuk anda",
     fitsYouLead: "Syif terbuka dinilai mengikut kemahiran, bahasa, dan pusat.",
     matchWeak: "Padanan separa",
@@ -761,15 +770,15 @@ const I18N = {
     volunteerCheck: "ஒரு சேவை மணிநேரத்தைப் பதிவு செய்",
     volunteerCheckLead: "நீட்சி இடம் அல்லது சேவை மையத்தில் QR ஐ ஸ்கேன் செய்யுங்கள். ஒரு வருகை ஒரு மணிநேரம்.",
     volunteerHours: "இந்த மாத மணிநேரம்",
-    volunteerBoard: "இந்த மாத மணிநேரம்",
-    volunteerBoardLead: "கணக்கு காட்சிப் பெயர் மட்டும். NRIC, தொலைபேசி, மின்னஞ்சல் இல்லை.",
+    volunteerBoard: "தொண்டர் முன்னணிப் பட்டியல்",
+    volunteerBoardLead: "இந்த மாத முதல் 3 தொண்டர்கள்",
     volunteerBadges: "தொண்டர் பதக்கங்கள்",
     ambassador: "வெண்கல பராமரிப்பு தூதர்",
-    ambassadorDetail: "3 மணிநேரம் பதிவு செய்த பிறகு மையம் பற்சிப்பி முள் தரும்.",
+    ambassadorDetail: "3 சேவை மணிநேரம் பதிவு செய்து மையத்தில் உடல் பற்சிப்பி முளைத் திறக்கவும்.",
     fighter: "தங்க புற்றுநோய் போராளி",
-    fighterDetail: "10 மணிநேரம் பதிவு செய்த பிறகு மையம் ட்ரை-பிட் சட்டை தரும்.",
-    tokenPin: "உடல் பரிசு: பற்சிப்பி முள், மையத்தில் பெறுங்கள்.",
-    tokenTee: "உடல் பரிசு: ட்ரை-பிட் சட்டை, மையத்தில் பெறுங்கள்.",
+    fighterDetail: "10 சேவை மணிநேரம் பதிவு செய்து மையத்தில் உடல் ட்ரை-பிட் சட்டையைத் திறக்கவும்.",
+    tokenPin: "பற்சிப்பி முள் — மையத்தில் பெறுங்கள்.",
+    tokenTee: "ட்ரை-பிட் சட்டை — மையத்தில் பெறுங்கள்.",
     hourLogged: "ஒரு சேவை மணிநேரம் பதிவானது.",
     hourNeedsSign: "உள்நுழையுங்கள்; இந்த மணிநேரம் உங்கள் காட்சிப் பெயரில் பதிவாகும்.",
     giveDirect: "PayNow அல்லது அட்டை கொடை 365CPS-இடமே இருக்கும். இந்த வழியில் மூன்றாம் தரப்பு கழிவு இல்லை.",
@@ -799,10 +808,13 @@ const I18N = {
     langSkillMs: "Bahasa Melayu",
     langSkillTa: "தமிழ்",
     yourSkills: "உங்கள் திறன்கள்",
-    yourSkillsLead: "நீங்கள் செய்யக்கூடியதைத் தேர்ந்தெடுங்கள். காட்சிப் பெயர் மட்டும். NRIC, தொலைபேசி, மின்னஞ்சல் இல்லை.",
+    yourSkillsLead: "நீங்கள் ஏற்கக்கூடிய பங்குகளைத் தேர்ந்தெடுங்கள், அல்லது கீழே வேறொரு திறனைச் சேருங்கள்.",
     preferredCentre: "விருப்ப மையம்",
     saveSkills: "திறன்களைச் சேமி",
     skillsSaved: "திறன்கள் இந்த தொலைபேசியில் சேமிக்கப்பட்டன.",
+    addSkill: "திறனைச் சேர்",
+    addSkillHint: "வேறொரு திறன், எ.கா. முதலுதவி",
+    skillExists: "அந்தத் திறன் ஏற்கனவே உங்கள் பட்டியலில் உள்ளது.",
     fitsYou: "உங்களுக்குப் பொருந்தும்",
     fitsYouLead: "திறன், மொழி, மையம் அடிப்படையில் திறந்த பணிகளுக்கு மதிப்பெண்.",
     matchWeak: "பகுதி பொருத்தம்",
@@ -1337,7 +1349,7 @@ function renderCheckin() {
 function renderVolunteer() {
   const name = state.user && state.user.name ? state.user.name : "";
   const hours = name ? volunteerHoursFor(name) : 0;
-  const board = volunteerBoard();
+  const board = volunteerBoard().slice(0, 3);
   const profile = name ? profileFor(name) : { skills: [], languages: [], centre: "" };
   const draft = state.skillDraft || profile;
   const fits = name ? rankedShiftsFor(name) : [];
@@ -1350,8 +1362,12 @@ function renderVolunteer() {
     ask: careMark('<path d="M12 3 L13.2 8.8 L19 10 L13.2 11.2 L12 17 L10.8 11.2 L5 10 L10.8 8.8 Z"/>'),
     checkin: careMark('<rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 8 H11 V11 H8 Z M13 9 H16 M8 14 H16 M8 17 H13"/>')
   };
+  const knownSkillIds = new Set(VOLUNTEER_SKILLS.map(([id]) => id));
+  const customSkills = (draft.skills || []).filter((id) => !knownSkillIds.has(id));
   const skillChips = VOLUNTEER_SKILLS.map(([id, key]) =>
     `<button type="button" class="chip${(draft.skills || []).includes(id) ? " on" : ""}" data-toggle-skill="${id}">${t(key)}</button>`
+  ).join("") + customSkills.map((id) =>
+    `<button type="button" class="chip on" data-toggle-skill="${esc(id)}">${esc(skillLabel(id))}</button>`
   ).join("");
   const langChips = VOLUNTEER_LANGS.map(([id, key]) =>
     `<button type="button" class="chip${(draft.languages || []).includes(id) ? " on" : ""}" data-toggle-vlang="${id}">${t(key)}</button>`
@@ -1381,6 +1397,9 @@ function renderVolunteer() {
     ${name ? `
       <label class="field">${t("skillCol")}</label>
       <div class="chips">${skillChips}</div>
+      <label class="field">${t("addSkill")}</label>
+      <input id="new-skill" placeholder="${esc(t("addSkillHint"))}" value="">
+      <button class="ghost" id="do-add-skill" type="button">${t("addSkill")}</button>
       <label class="field">${t("langCol")}</label>
       <div class="chips">${langChips}</div>
       <label class="field">${t("preferredCentre")}</label>
@@ -1975,7 +1994,7 @@ document.body.addEventListener("submit", (event) => {
 });
 
 document.body.addEventListener("click", (event) => {
-  const el = event.target.closest("[data-go],[data-role],[data-lang],[data-set],[data-clinic],[data-slot],[data-amt],[data-pay],[data-story],[data-save],[data-share],[data-filter],[data-feed],[data-channel],[data-image],[data-chat],[data-pick],[data-web],[data-reg],[data-service],[data-prog],[data-badge],[data-reschedule],[data-time],[data-play-survivor],[data-toggle-skill],[data-toggle-vlang],[data-accept-shift],[data-assign-shift],[data-ask-shift],#assess-next,#confirm-book,#do-checkin,#do-care,#do-give,#do-ref,#do-place,#do-publish,#do-auth,#auth-switch,#do-signout,#client-next,#client-save,#screen-next,#screen-save,#do-play,#do-survivor,#do-volunteer-ask,#do-save-skills,#do-tax,#do-print,#chat-toggle,#back");
+  const el = event.target.closest("[data-go],[data-role],[data-lang],[data-set],[data-clinic],[data-slot],[data-amt],[data-pay],[data-story],[data-save],[data-share],[data-filter],[data-feed],[data-channel],[data-image],[data-chat],[data-pick],[data-web],[data-reg],[data-service],[data-prog],[data-badge],[data-reschedule],[data-time],[data-play-survivor],[data-toggle-skill],[data-toggle-vlang],[data-accept-shift],[data-assign-shift],[data-ask-shift],#assess-next,#confirm-book,#do-checkin,#do-care,#do-give,#do-ref,#do-place,#do-publish,#do-auth,#auth-switch,#do-signout,#client-next,#client-save,#screen-next,#screen-save,#do-play,#do-survivor,#do-volunteer-ask,#do-save-skills,#do-add-skill,#do-tax,#do-print,#chat-toggle,#back");
   if (!el) return;
   if (el.dataset.reschedule) {
     state.editing = state.editing === el.dataset.reschedule ? "" : el.dataset.reschedule;
@@ -2048,6 +2067,28 @@ document.body.addEventListener("click", (event) => {
     if (languages.has(el.dataset.toggleVlang)) languages.delete(el.dataset.toggleVlang);
     else languages.add(el.dataset.toggleVlang);
     state.skillDraft = { ...base, languages: [...languages] };
+    state.skillNote = "";
+    render();
+    return;
+  }
+  if (el.id === "do-add-skill") {
+    const name = state.user && state.user.name;
+    if (!name) return;
+    const input = document.getElementById("new-skill");
+    const label = (input && input.value ? input.value : "").trim();
+    if (!label) return;
+    const base = state.skillDraft || profileFor(name);
+    const skills = [...(base.skills || [])];
+    const known = VOLUNTEER_SKILLS.find(([, key]) => t(key).toLowerCase() === label.toLowerCase());
+    const id = known ? known[0] : label;
+    const exists = skills.some((skill) => skill.toLowerCase() === id.toLowerCase() || skillLabel(skill).toLowerCase() === label.toLowerCase());
+    if (exists) {
+      state.skillNote = t("skillExists");
+      render();
+      return;
+    }
+    skills.push(id);
+    state.skillDraft = { ...base, skills };
     state.skillNote = "";
     render();
     return;
